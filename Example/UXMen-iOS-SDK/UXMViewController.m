@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 git-erdinc-bakir. All rights reserved.
 //
 
+#import <UXMen_iOS_SDK/UXMenSDK.h>
 #import "UXMViewController.h"
 
 @interface UXMViewController ()
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+	UXMenSDK *uxMenSdk = [UXMenSDK new];
+    [uxMenSdk sayHello];
+
 }
 
 - (void)didReceiveMemoryWarning

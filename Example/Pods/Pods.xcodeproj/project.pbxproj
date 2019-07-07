@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17A5107B22D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
-		17A5107E22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
+		2256327AA4AE1CABE890275F57D5D9EC /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923436D425E5C9276404C15FF93497 /* UXMen-iOS-SDK-dummy.m */; };
+		2409BAB406882AFF3FABDBE822A20990 /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC586DB556D96DDA0EF75E84CB8E3C8 /* UXMenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
 		491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */; };
+		605729FBB04141C7BD389798A994A818 /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 720D8392E68CA74E86739FA83DB2AFAC /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1F2B5D8A6A4D2F17D8A4B91A6B77E35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C2E1EFD443DC6B6E1D49221931280226 /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34F0A832B8260F92FFCD5C81AA3B29 /* UXMen-iOS-SDK-dummy.m */; };
-		C50B9DCEE213B32472737E19263D5D32 /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B80383A019BDA9E977D13DE9F9C539F /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A183A6031B6BAAA1FB010C2C4E1559BA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 343FD6458CFCAD75C17106AE2F7E18D3 /* ReplaceMe.m */; };
+		C2073BE17E9674C2CF0DBDE80504B00F /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 15112AFC7F85E0B604F720A0FFA551A1 /* UXMenSDK.m */; };
 		C8E6C4C2B8AD84BC00834A406EBD22D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F9D03E335318A34B4E809F8F5F23B83A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 143586BA3F007AE6562FD03F3F67EE6B /* ReplaceMe.m */; };
+		D5F152655CF14D4049558429B5FA74EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		FE0768EF3D5E40BD1BAC4D2FB92F3786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,39 +40,39 @@
 
 /* Begin PBXFileReference section */
 		00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXMen_iOS_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F34F0A832B8260F92FFCD5C81AA3B29 /* UXMen-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UXMen-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
-		143586BA3F007AE6562FD03F3F67EE6B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "UXMen-iOS-SDK/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
-		17A5107722D218C300A182FB /* UXMenSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXMenSDK.h; sourceTree = "<group>"; };
-		17A5107822D218C300A182FB /* UXMenSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMenSDK.m; sourceTree = "<group>"; };
+		0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Tests.framework; path = "Pods-UXMen-iOS-SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15112AFC7F85E0B604F720A0FFA551A1 /* UXMenSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UXMenSDK.m; path = "UXMen-iOS-SDK/Classes/UXMenSDK.m"; sourceTree = "<group>"; };
+		1FC586DB556D96DDA0EF75E84CB8E3C8 /* UXMenSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UXMenSDK.h; path = "UXMen-iOS-SDK/Classes/UXMenSDK.h"; sourceTree = "<group>"; };
+		27CCCA27C5419275D06CCEFDE3441631 /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32C9998DC3500987C74C458D3552E490 /* UXMen-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UXMen-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		343FD6458CFCAD75C17106AE2F7E18D3 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "UXMen-iOS-SDK/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
 		364BBB4640B1F822759B3AA40070BDB4 /* Pods-UXMen-iOS-SDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UXMen-iOS-SDK_Tests.modulemap"; sourceTree = "<group>"; };
 		3A799C3CE3BFD9CA5705BFE633FD2C29 /* Pods-UXMen-iOS-SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3C907E209926C3C65687759D90DA3057 /* UXMen-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UXMen-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
 		422932CA025E19FD84BB44071BD35953 /* Pods-UXMen-iOS-SDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		440CE45AC6C3D4D11B3A78651A47081A /* Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A857F1C395579B72FB1F5A44AA21F14 /* UXMen-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UXMen-iOS-SDK.modulemap"; sourceTree = "<group>"; };
-		4B80383A019BDA9E977D13DE9F9C539F /* UXMen-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
-		518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UXMen_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UXMen_iOS_SDK.framework; path = "UXMen-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Example-dummy.m"; sourceTree = "<group>"; };
-		7A1479395F61F27FDD78E0E8F7D7C6DB /* UXMen-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		6B99C27E048EE17F81B0E7949D384F81 /* UXMen-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UXMen-iOS-SDK.modulemap"; sourceTree = "<group>"; };
+		720D8392E68CA74E86739FA83DB2AFAC /* UXMen-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
 		7A9E33E8CB28FC50FCC64D968271D594 /* Pods-UXMen-iOS-SDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-Info.plist"; sourceTree = "<group>"; };
 		7BE4ADBFE8A2573AF90EB920E236D023 /* Pods-UXMen-iOS-SDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		819E76989484A49786606F5E55C1EA06 /* Pods-UXMen-iOS-SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXMen_iOS_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Example.framework; path = "Pods-UXMen-iOS-SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990CE477D2828684B0B84A2B30266CD7 /* UXMen-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0E010EA2945A43B01FA2FC073B6FCE7 /* UXMen-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UXMen-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
 		A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD923436D425E5C9276404C15FF93497 /* UXMen-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UXMen-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
 		AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B03A808F9C9C718008D575BAABC212E9 /* Pods-UXMen-iOS-SDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B46943BF8A5C27041850CD7EA2588B09 /* UXMen-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UXMen-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		B5FA38564331DA00EEBB8B9EE22ED7D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C3E4E75D66A83504E83099C8443FC619 /* Pods-UXMen-iOS-SDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C604C7AED96B8A7AC724A244E5335270 /* Pods-UXMen-iOS-SDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UXMen-iOS-SDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CB7DFA42F2965F142D5155F2D7955A01 /* Pods-UXMen-iOS-SDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UXMen-iOS-SDK_Example.modulemap"; sourceTree = "<group>"; };
 		D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		D98119A457CF0E1828FF27EE31D737D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DE6AF80AC0460180E779649744B40247 /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; };
-		E4844F96A31E526860B43328F94A7301 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EC6BABA91D3DDF6DBBB5F479780529CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +92,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE23420A06D807CBF6910DE791276775 /* Frameworks */ = {
+		D41DB511B33087A271981EF0D3CC46EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F2B5D8A6A4D2F17D8A4B91A6B77E35 /* Foundation.framework in Frameworks */,
+				D5F152655CF14D4049558429B5FA74EB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +119,24 @@
 			path = "Target Support Files/Pods-UXMen-iOS-SDK_Tests";
 			sourceTree = "<group>";
 		};
+		203B02CC4F0B5780F90A454296E25773 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EC6BABA91D3DDF6DBBB5F479780529CB /* LICENSE */,
+				B5FA38564331DA00EEBB8B9EE22ED7D8 /* README.md */,
+				27CCCA27C5419275D06CCEFDE3441631 /* UXMen-iOS-SDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5009C5CBD5F9C03F99492BE773223402 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				787110140475BE6693A171876B216D7A /* UXMen-iOS-SDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		54DFC537D0EF91B409E9E9E8DAA9B6F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,20 +145,6 @@
 				518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5AC13635D9747113AF228C3E4C7081ED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A857F1C395579B72FB1F5A44AA21F14 /* UXMen-iOS-SDK.modulemap */,
-				B46943BF8A5C27041850CD7EA2588B09 /* UXMen-iOS-SDK.xcconfig */,
-				0F34F0A832B8260F92FFCD5C81AA3B29 /* UXMen-iOS-SDK-dummy.m */,
-				3C907E209926C3C65687759D90DA3057 /* UXMen-iOS-SDK-Info.plist */,
-				7A1479395F61F27FDD78E0E8F7D7C6DB /* UXMen-iOS-SDK-prefix.pch */,
-				4B80383A019BDA9E977D13DE9F9C539F /* UXMen-iOS-SDK-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/UXMen-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		74BF1A5E9D697767665CCCAF3CBC3A62 /* Pods-UXMen-iOS-SDK_Example */ = {
@@ -160,6 +164,19 @@
 			path = "Target Support Files/Pods-UXMen-iOS-SDK_Example";
 			sourceTree = "<group>";
 		};
+		787110140475BE6693A171876B216D7A /* UXMen-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				343FD6458CFCAD75C17106AE2F7E18D3 /* ReplaceMe.m */,
+				1FC586DB556D96DDA0EF75E84CB8E3C8 /* UXMenSDK.h */,
+				15112AFC7F85E0B604F720A0FFA551A1 /* UXMenSDK.m */,
+				203B02CC4F0B5780F90A454296E25773 /* Pod */,
+				C24FB1990FA43C942765ED7EE0399D2A /* Support Files */,
+			);
+			name = "UXMen-iOS-SDK";
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,11 +185,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C24FB1990FA43C942765ED7EE0399D2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B99C27E048EE17F81B0E7949D384F81 /* UXMen-iOS-SDK.modulemap */,
+				32C9998DC3500987C74C458D3552E490 /* UXMen-iOS-SDK.xcconfig */,
+				AD923436D425E5C9276404C15FF93497 /* UXMen-iOS-SDK-dummy.m */,
+				A0E010EA2945A43B01FA2FC073B6FCE7 /* UXMen-iOS-SDK-Info.plist */,
+				990CE477D2828684B0B84A2B30266CD7 /* UXMen-iOS-SDK-prefix.pch */,
+				720D8392E68CA74E86739FA83DB2AFAC /* UXMen-iOS-SDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/UXMen-iOS-SDK";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F773297B77181C6A17BFF0DC2EF5BAA3 /* Development Pods */,
+				5009C5CBD5F9C03F99492BE773223402 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				54DFC537D0EF91B409E9E9E8DAA9B6F5 /* Products */,
 				E785D6E7EADD9DDE983B4D64B24A84DC /* Targets Support Files */,
@@ -187,19 +218,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6A2AF6B4570B62FEA9866EF9469C89E /* UXMen-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				143586BA3F007AE6562FD03F3F67EE6B /* ReplaceMe.m */,
-				FE208F9FBF03302FEBECAEE6B19111D0 /* Pod */,
-				5AC13635D9747113AF228C3E4C7081ED /* Support Files */,
-				17A5107722D218C300A182FB /* UXMenSDK.h */,
-				17A5107822D218C300A182FB /* UXMenSDK.m */,
-			);
-			name = "UXMen-iOS-SDK";
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		E785D6E7EADD9DDE983B4D64B24A84DC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,33 +227,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F773297B77181C6A17BFF0DC2EF5BAA3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D6A2AF6B4570B62FEA9866EF9469C89E /* UXMen-iOS-SDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FE208F9FBF03302FEBECAEE6B19111D0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D98119A457CF0E1828FF27EE31D737D3 /* LICENSE */,
-				E4844F96A31E526860B43328F94A7301 /* README.md */,
-				DE6AF80AC0460180E779649744B40247 /* UXMen-iOS-SDK.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		98C0395EC67CAAF4FB627A37E032208C /* Headers */ = {
+		84A72E0D7AFCA0E47471C61D40A97DAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50B9DCEE213B32472737E19263D5D32 /* UXMen-iOS-SDK-umbrella.h in Headers */,
-				17A5107B22D218C300A182FB /* UXMenSDK.h in Headers */,
+				605729FBB04141C7BD389798A994A818 /* UXMen-iOS-SDK-umbrella.h in Headers */,
+				2409BAB406882AFF3FABDBE822A20990 /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,12 +260,12 @@
 /* Begin PBXNativeTarget section */
 		07CB366C0D7BE3388F8A0F6A889A845F /* UXMen-iOS-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3585B1C979779DD090C74443A953D94F /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
+			buildConfigurationList = 390DE304CBF721863732953672D33C0B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
 			buildPhases = (
-				98C0395EC67CAAF4FB627A37E032208C /* Headers */,
-				851CCB51DE362DCF676EFBA5B098F982 /* Sources */,
-				BE23420A06D807CBF6910DE791276775 /* Frameworks */,
-				083495C36376751DD78FF43BBB93311F /* Resources */,
+				84A72E0D7AFCA0E47471C61D40A97DAF /* Headers */,
+				153C2B5235AA5C3573B7CA33B1261CDD /* Sources */,
+				D41DB511B33087A271981EF0D3CC46EA /* Frameworks */,
+				AB7C8958070370CFCB4950DD898AE180 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -343,14 +343,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		083495C36376751DD78FF43BBB93311F /* Resources */ = {
+		5A4642655DDAB9D507C46287CA169E8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A4642655DDAB9D507C46287CA169E8B /* Resources */ = {
+		AB7C8958070370CFCB4950DD898AE180 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,21 +367,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		153C2B5235AA5C3573B7CA33B1261CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A183A6031B6BAAA1FB010C2C4E1559BA /* ReplaceMe.m in Sources */,
+				2256327AA4AE1CABE890275F57D5D9EC /* UXMen-iOS-SDK-dummy.m in Sources */,
+				C2073BE17E9674C2CF0DBDE80504B00F /* UXMenSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F287A0516108D524BBE271FA10D3F58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		851CCB51DE362DCF676EFBA5B098F982 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9D03E335318A34B4E809F8F5F23B83A /* ReplaceMe.m in Sources */,
-				17A5107E22D218C300A182FB /* UXMenSDK.m in Sources */,
-				C2E1EFD443DC6B6E1D49221931280226 /* UXMen-iOS-SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +411,69 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0021B82D5093CA05103BE53C838B3243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C9998DC3500987C74C458D3552E490 /* UXMen-iOS-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
+				PRODUCT_NAME = UXMen_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		029277F65D8BC04453891D659FD32E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C9998DC3500987C74C458D3552E490 /* UXMen-iOS-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
+				PRODUCT_NAME = UXMen_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2F5992EAB2865B57A44ECB869AC18ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */;
@@ -531,41 +594,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		591537AA633FE96E6D9F0EA9495B7317 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B46943BF8A5C27041850CD7EA2588B09 /* UXMen-iOS-SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
-				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
-				PRODUCT_NAME = UXMen_iOS_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -666,37 +698,6 @@
 			};
 			name = Debug;
 		};
-		9B90964EBF47A12FED0EC1BD83EEBC61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B46943BF8A5C27041850CD7EA2588B09 /* UXMen-iOS-SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
-				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
-				PRODUCT_NAME = UXMen_iOS_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BA0B7DF83EBBD09F147F42C3E39675EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */;
@@ -734,11 +735,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3585B1C979779DD090C74443A953D94F /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
+		390DE304CBF721863732953672D33C0B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B90964EBF47A12FED0EC1BD83EEBC61 /* Debug */,
-				591537AA633FE96E6D9F0EA9495B7317 /* Release */,
+				029277F65D8BC04453891D659FD32E97 /* Debug */,
+				0021B82D5093CA05103BE53C838B3243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

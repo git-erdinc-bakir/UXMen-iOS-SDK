@@ -1,5 +1,5 @@
 PODS:
-  - UXMen-iOS-SDK (0.1.0)
+  - UXMen-iOS-SDK (0.1.1)
 
 DEPENDENCIES:
   - UXMen-iOS-SDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UXMen-iOS-SDK: b664d843fe7fdd4876805b03371743a3fbe5f457
+  UXMen-iOS-SDK: bb778e33861a52fddf1e864284cd10e9e03dbaf9
 
 PODFILE CHECKSUM: 9e8ad36d839d8ec64f82d1826ad6198c25cee5e0
 
