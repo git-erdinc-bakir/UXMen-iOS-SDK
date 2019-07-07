@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A5107922D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
+		17A5107A22D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
+		17A5107B22D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
+		17A5107C22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
+		17A5107D22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
+		17A5107E22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
 		36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
 		491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */; };
@@ -41,6 +47,8 @@
 		0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXMen_iOS_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F34F0A832B8260F92FFCD5C81AA3B29 /* UXMen-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UXMen-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
 		143586BA3F007AE6562FD03F3F67EE6B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "UXMen-iOS-SDK/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
+		17A5107722D218C300A182FB /* UXMenSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXMenSDK.h; sourceTree = "<group>"; };
+		17A5107822D218C300A182FB /* UXMenSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMenSDK.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		364BBB4640B1F822759B3AA40070BDB4 /* Pods-UXMen-iOS-SDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UXMen-iOS-SDK_Tests.modulemap"; sourceTree = "<group>"; };
 		3A799C3CE3BFD9CA5705BFE633FD2C29 /* Pods-UXMen-iOS-SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +197,8 @@
 				143586BA3F007AE6562FD03F3F67EE6B /* ReplaceMe.m */,
 				FE208F9FBF03302FEBECAEE6B19111D0 /* Pod */,
 				5AC13635D9747113AF228C3E4C7081ED /* Support Files */,
+				17A5107722D218C300A182FB /* UXMenSDK.h */,
+				17A5107822D218C300A182FB /* UXMenSDK.m */,
 			);
 			name = "UXMen-iOS-SDK";
 			path = ../..;
@@ -229,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50B9DCEE213B32472737E19263D5D32 /* UXMen-iOS-SDK-umbrella.h in Headers */,
+				17A5107B22D218C300A182FB /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */,
+				17A5107A22D218C300A182FB /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */,
+				17A5107922D218C300A182FB /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A5107D22D218C300A182FB /* UXMenSDK.m in Sources */,
 				3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D03E335318A34B4E809F8F5F23B83A /* ReplaceMe.m in Sources */,
+				17A5107E22D218C300A182FB /* UXMenSDK.m in Sources */,
 				C2E1EFD443DC6B6E1D49221931280226 /* UXMen-iOS-SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A5107C22D218C300A182FB /* UXMenSDK.m in Sources */,
 				491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

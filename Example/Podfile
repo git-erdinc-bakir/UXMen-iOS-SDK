@@ -8,6 +8,6 @@ target 'UXMen-iOS-SDK_Example' do
   target 'UXMen-iOS-SDK_Tests' do
     inherit! :search_paths
 
-    
   end
+  
 end
