@@ -1,0 +1,6 @@
+framework module UXMen_iOS_SDK {
+  umbrella header "UXMen-iOS-SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

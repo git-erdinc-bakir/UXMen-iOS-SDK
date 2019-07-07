@@ -1,0 +1,22 @@
+{
+  "name": "UXMen-iOS-SDK",
+  "version": "0.1.0",
+  "summary": "A short description of UXMen-iOS-SDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git-erdinc-bakir/UXMen-iOS-SDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git-erdinc-bakir": "e.bakir@thy.com"
+  },
+  "source": {
+    "git": "https://github.com/git-erdinc-bakir/UXMen-iOS-SDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UXMen-iOS-SDK/Classes/**/*"
+}

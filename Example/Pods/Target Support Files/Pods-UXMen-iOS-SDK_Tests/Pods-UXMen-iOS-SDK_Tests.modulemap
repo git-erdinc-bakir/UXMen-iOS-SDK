@@ -1,0 +1,6 @@
+framework module Pods_UXMen_iOS_SDK_Tests {
+  umbrella header "Pods-UXMen-iOS-SDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
