@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17A5107922D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
-		17A5107A22D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
 		17A5107B22D218C300A182FB /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A5107722D218C300A182FB /* UXMenSDK.h */; };
-		17A5107C22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
-		17A5107D22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
 		17A5107E22D218C300A182FB /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5107822D218C300A182FB /* UXMenSDK.m */; };
 		36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
@@ -248,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */,
-				17A5107A22D218C300A182FB /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */,
-				17A5107922D218C300A182FB /* UXMenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A5107D22D218C300A182FB /* UXMenSDK.m in Sources */,
 				3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A5107C22D218C300A182FB /* UXMenSDK.m in Sources */,
 				491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
