@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UXMen-iOS-SDK'
   s.version          = '0.1.0'
-  s.summary          = 'UXMen iOS SDK provides user actions as projection of flow chart.'
+  s.summary          = 'A short description of UXMen-iOS-SDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-UXMen iOS SDK provides user actions as projection for determine how user reacts to UX style of your mobile application. You can optimize your UI/UX according to your own user data.
+TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/git-erdinc-bakir/UXMen-iOS-SDK'
