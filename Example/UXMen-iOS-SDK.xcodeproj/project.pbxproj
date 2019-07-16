@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1798A80422DE734500446DB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1798A80222DE734500446DB7 /* SecondViewController.m */; };
 		17A5108022D21C2F00A182FB /* UXMen_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */; };
 		56593FC003F7E2C63D08C0AF /* Pods_UXMen_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74435CFA36B9195DD162610F /* Pods_UXMen_iOS_SDK_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		10C57EEA348115EC7E86EC8A /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1798A80222DE734500446DB7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1798A80322DE734500446DB7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UXMen_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB4DCFFC426E2A5DC0C7A9D /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UXMen-iOS-SDK.podspec"; path = "../UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; };
 		1FCB613FCF6F78B18418996B /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,12 +152,14 @@
 			children = (
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				1798A80322DE734500446DB7 /* SecondViewController.h */,
+				1798A80222DE734500446DB7 /* SecondViewController.m */,
+				6003F594195388D20070C39A /* Supporting Files */,
 				6003F5A5195388D20070C39A /* UXMViewController.h */,
 				6003F5A6195388D20070C39A /* UXMViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for UXMen-iOS-SDK";
 			path = "UXMen-iOS-SDK";
@@ -368,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1798A80422DE734500446DB7 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* UXMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

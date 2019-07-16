@@ -28,6 +28,8 @@ NSString *API_STORY = @"story";
     UXMenResponseHandshake *handshakeResponse;
     UXMenResponseStatus *statusResponse;
 
+    NSString *pageName;
+    NSString *lastCachedPageName;
     NSMutableArray *currentViewComponents;
 }
 
@@ -37,6 +39,8 @@ NSString *API_STORY = @"story";
     delegate = [UIApplication sharedApplication].delegate;
 
     apiSessionId = -1;
+    pageName = @"";
+    lastCachedPageName = @"-";
 
     API_BASE_URL = @"http://134.209.93.110:3000";
     // API_BASE_URL = @"http://192.168.1.10:3000";
@@ -120,13 +124,13 @@ NSString *API_STORY = @"story";
                                                             return;
                                                         }
 
-                                                        handshakeResponse = [UXMenResponseHandshake new];
-                                                        handshakeResponse.status = [jsonResponse[@"status"] intValue];
-                                                        handshakeResponse.session = [jsonResponse[@"session"] longLongValue];
+                                                        self->handshakeResponse = [UXMenResponseHandshake new];
+                                                        self->handshakeResponse.status = [jsonResponse[@"status"] intValue];
+                                                        self->handshakeResponse.session = [jsonResponse[@"session"] longLongValue];
 
-                                                        apiSessionId = handshakeResponse.session;
+                                                        self->apiSessionId = self->handshakeResponse.session;
 
-                                                        [self parseWireFrameAndSendToServer];
+                                                        [self initScreen];
 
                                                         // [self.delegate returnWithUXMenHandshake:handshakeResponse];
 
@@ -136,46 +140,44 @@ NSString *API_STORY = @"story";
 
 }
 
-- (void)parseWireFrameAndSendToServer {
+- (void)initScreen {
 
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSMutableArray *elements = [self getViewComponents];
-
-        UXMenRequestStory *requestStory = [UXMenRequestStory new];
-        requestStory.page = NSStringFromClass([self class]);
-
-        [self sendStory:requestStory];
-
-    });
-
+    [self sendNewStoryWithNewScreen:YES];
+    
 }
 
 #pragma mark WIREFRAME OPERATIONS
 
 - (NSMutableArray *)getViewComponents {
-    NSLog(@"getViewComponents");
+//    NSLog(@"getViewComponents");
 
     UIViewController *topViewController = [UIViewController new];
     topViewController.view = [UIView new];
 
-//    if ([self->delegate.window.rootViewController class] == [UIViewController class]) {
-//        NSLog(@"getViewComponents UIViewController class");
-//        topViewController = self->delegate.window.rootViewController;
-//
-//    } else if ([self->delegate.window.rootViewController class] == [UINavigationController class]) {
-//        NSLog(@"getViewComponents UINavigationController class");
-//        UINavigationController *controller = (UINavigationController *) self->delegate.window.rootViewController;
-////        topViewController = [[controller viewControllers] lastObject];
-//
-//
-//    }
+    if ([self->delegate.window.rootViewController isKindOfClass:[UINavigationController class]]) {
+        //        NSLog(@"getViewComponents UINavigationController class");
+        UINavigationController *controller = (UINavigationController *) self->delegate.window.rootViewController;
+        topViewController = [[controller viewControllers] lastObject];
 
+    } else if ([self->delegate.window.rootViewController isKindOfClass:[UIViewController class]]) {
+        //        NSLog(@"getViewComponents UIViewController class");
+        topViewController = self->delegate.window.rootViewController;
+
+    } else {
+        NSLog(@"getViewComponents class");
+        NSLog(@"%@", [NSString stringWithFormat:@"%@", [self->delegate.window.rootViewController class] ]);
+        
+        return [NSMutableArray new];
+    }
+
+    pageName = NSStringFromClass([topViewController class]);
+    
     UIView *currentView = topViewController.view;
 
-    NSLog(@"CONTAINER VIEW X      : %f", currentView.frame.origin.x);
-    NSLog(@"CONTAINER VIEW Y      : %f", currentView.frame.origin.y);
-    NSLog(@"CONTAINER VIEW WIDTH  : %f", currentView.frame.size.width);
-    NSLog(@"CONTAINER VIEW HEIGHT : %f", currentView.frame.size.height);
+//    NSLog(@"CONTAINER VIEW X      : %f", currentView.frame.origin.x);
+//    NSLog(@"CONTAINER VIEW Y      : %f", currentView.frame.origin.y);
+//    NSLog(@"CONTAINER VIEW WIDTH  : %f", currentView.frame.size.width);
+//    NSLog(@"CONTAINER VIEW HEIGHT : %f", currentView.frame.size.height);
 
     self->currentViewComponents = [NSMutableArray new];
 
@@ -189,8 +191,6 @@ NSString *API_STORY = @"story";
 
     for (UIView *subview in view.subviews) {
         UXMenRequestElementData *elementData = [UXMenRequestElementData new];
-
-        // NSStringFromClass([t.view class])
 
         if ([subview class] == [UIButton class]) {
             NSLog(@"VIEW'DE BULUNAN OBJE    : UIButton");
@@ -232,15 +232,24 @@ NSString *API_STORY = @"story";
 
             [self parseView:subview];
 
+        } else if ([subview class] == [UILayoutGuide class]) {
+            NSLog(@"VIEW'DE BULUNAN OBJE    : UILayoutGuide");
+            
+            elementData.type = @"UILayoutGuide";
+            
+            [self parseView:subview];
+            
         } else {
             elementData.type = @"OtherComponent";
 
         }
 
-        NSLog(@"COMPONENT X      : %f", subview.frame.origin.x);
-        NSLog(@"COMPONENT Y      : %f", subview.frame.origin.y);
-        NSLog(@"COMPONENT WIDTH  : %f", subview.frame.size.width);
-        NSLog(@"COMPONENT HEIGHT : %f", subview.frame.size.height);
+//        NSLog(@"COMPONENT X      : %f", subview.frame.origin.x);
+//        NSLog(@"COMPONENT Y      : %f", subview.frame.origin.y);
+//        NSLog(@"COMPONENT WIDTH  : %f", subview.frame.size.width);
+//        NSLog(@"COMPONENT HEIGHT : %f", subview.frame.size.height);
+
+//        NSLog(@"-");
 
         elementData.posX = subview.frame.origin.x;
         elementData.posY = subview.frame.origin.y;
@@ -249,8 +258,6 @@ NSString *API_STORY = @"story";
         elementData.objHeight = subview.frame.size.height;
 
         [currentViewComponents addObject:elementData];
-
-        NSLog(@"-");
 
     }
 
@@ -276,94 +283,121 @@ NSString *API_STORY = @"story";
 
 - (void)timerCalled {
 
+    [self sendNewStoryWithNewScreen:NO];
+    
+}
+
+- (void)sendNewStoryWithNewScreen:(BOOL) isInitialScreen {
+
     NSMutableArray *arrayPoints = [self getTouchLocations];
-    NSMutableArray *arrayWeigths = [self getTouchWeights];
+    // NSMutableArray *arrayWeigths = [self getTouchWeights];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UXMenRequestStory *requestStory = [UXMenRequestStory new];
+        requestStory.session_id = @(self->apiSessionId);
 
-    if ([arrayPoints isKindOfClass:[NSMutableArray class]]) {
-        if (arrayPoints.count > 0) {
-            UXMenRequestStory *requestStory = [UXMenRequestStory new];
-            requestStory.page = NSStringFromClass([self class]);
+        NSDate *currentDate = [NSDate date];
+        double timestamp = [currentDate timeIntervalSince1970];
+        requestStory.timestamp = timestamp;
 
-            [self sendStory:requestStory];
-
+        ///////////////////////////
+        // GATHER WIREFRAME DATA
+        ///////////////////////////
+        
+        NSMutableDictionary *dictWireframe = [NSMutableDictionary new];
+        dictWireframe[@"timeStamp"] = @(timestamp);
+        
+        NSMutableArray *arrayElements = [NSMutableArray new];
+        NSMutableArray *arrayViewComponents = [self getViewComponents];
+        
+        for (NSUInteger i = 0; i < arrayViewComponents.count; i++) {
+            UXMenRequestElementData *screenData = arrayViewComponents[i];
+            
+            NSMutableDictionary *dictElement = [NSMutableDictionary new];
+            dictElement[@"posX"] = @(screenData.posX);
+            dictElement[@"posY"] = @(screenData.posY);
+            
+            dictElement[@"objWidth"] = @(screenData.objWidth);
+            dictElement[@"objHeight"] = @(screenData.objHeight);
+            
+            dictElement[@"type"] = screenData.type;
+            
+            [arrayElements addObject:dictElement];
+            
         }
+        
+        dictWireframe[@"elements"] = arrayElements;
+        
+        NSMutableArray *arrayWireframes = [NSMutableArray new];
+        [arrayWireframes addObject:dictWireframe];
+        
+        requestStory.wireframes = arrayWireframes;
 
-    }
+        ////////////////////////
+        // GATHER ACTION DATA
+        ////////////////////////
+        
+        BOOL hasAnyAction = NO;
+        NSMutableArray *arrayActions = [NSMutableArray new];
+        if ([arrayPoints isKindOfClass:[NSMutableArray class]]) {
+            if (arrayPoints.count > 0) {
+                hasAnyAction = YES;
+                
+                for (NSValue *pointValue in arrayPoints) {
+                    CGPoint point = [pointValue CGPointValue];
+                    
+                    NSMutableDictionary *dictAction = [NSMutableDictionary new];
+                    dictAction[@"posX"] = @(point.x);
+                    dictAction[@"posY"] = @(point.y);
+                    
+                    dictAction[@"timestamp"] = @(timestamp);
+                    
+                    [arrayActions addObject:dictAction];
+                    
+                }
+                
+                [self resetTouchRecords];
+                
+            }
+            
+        }
+        requestStory.actions = arrayActions;
+
+        ///////////////////////////
+        // SEND DATA TO SERVER
+        ///////////////////////////
+        requestStory.page = self->pageName;
+        
+        if ([self->lastCachedPageName isEqualToString:@"-"]) {
+            self->lastCachedPageName = self->pageName;
+            
+            [self sendStory:requestStory];
+        
+        } else if ([self->pageName isEqualToString:self->lastCachedPageName] == NO) {
+            [self sendStory:requestStory];
+            
+        } else if (hasAnyAction){
+            [self resetTouchRecords];
+            
+            [self sendStory:requestStory];
+            
+        }
+        
+    });
 
 }
 
 - (void)sendStory:(UXMenRequestStory *)requestStory {
 
-    requestStory.page = NSStringFromClass([self class]);
-
-    NSDate *currentDate = [NSDate date];
-    double timestamp = [currentDate timeIntervalSince1970];
-
-    // GATHER WIREFRAME DATA
-
-    NSMutableArray *arrayWireframes = [NSMutableArray new];
-    for (NSUInteger i = 0; i < requestStory.wireframes.count; i++) {
-        UXMenRequestWireFrame *wireFrame = requestStory.wireframes[i];
-
-        NSMutableDictionary *dictWireframe = [NSMutableDictionary new];
-        dictWireframe[@"timeStamp"] = @(timestamp);
-
-        NSMutableArray *arrayElements = [NSMutableArray new];
-        for (NSUInteger j = 0; j < wireFrame.elements.count; j++) {
-            UXMenRequestElementData *screenData = wireFrame.elements[j];
-
-            NSMutableDictionary *dictElement = [NSMutableDictionary new];
-            dictElement[@"posX"] = @(screenData.posX);
-            dictElement[@"posY"] = @(screenData.posY);
-
-            dictElement[@"objWidth"] = @(screenData.objWidth);
-            dictElement[@"objHeight"] = @(screenData.objHeight);
-
-            dictElement[@"type"] = screenData.type;
-
-            [arrayElements addObject:dictElement];
-
-        }
-
-        dictWireframe[@"elements"] = arrayElements;
-        [arrayWireframes addObject:dictWireframe];
-
-    }
-
-    // GATHER ACTION DATA
-
-    NSMutableArray *arrayPoints = [self getTouchLocations];
-    NSMutableArray *arrayWeigths = [self getTouchWeights];
-
-    NSMutableArray *arrayActions = [NSMutableArray new];
-    if ([arrayPoints isKindOfClass:[NSMutableArray class]]) {
-        if (arrayPoints.count > 0) {
-            for (NSValue *pointValue in arrayPoints) {
-                CGPoint point = [pointValue CGPointValue];
-
-                NSMutableDictionary *dictAction = [NSMutableDictionary new];
-                dictAction[@"posX"] = @(point.x);
-                dictAction[@"posY"] = @(point.y);
-
-                dictAction[@"timestamp"] = @(timestamp);
-
-                [arrayActions addObject:dictAction];
-
-            }
-
-            [self resetTouchRecords];
-
-        }
-
-    }
-
+    ////////////////////////
     // GATHER STORY DATA
+    ////////////////////////
 
-    NSDictionary *parameters = @{@"session_id": @(apiSessionId),
+    NSDictionary *parameters = @{@"session_id": requestStory.session_id,
             @"page": requestStory.page,
-            @"timeStamp": @(timestamp),
-            @"wireframes": arrayWireframes,
-            @"actions": arrayActions};
+            @"timeStamp": @(requestStory.timestamp),
+            @"wireframes": requestStory.wireframes,
+            @"actions": requestStory.actions};
 
     NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
 
@@ -379,6 +413,8 @@ NSString *API_STORY = @"story";
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                     if (error) {
+                                                        self->lastCachedPageName = @"-";
+                                                        
                                                         NSLog(@"%@", error);
 
                                                         NSLog(@"returnWithUXMenApiError");
@@ -394,6 +430,8 @@ NSString *API_STORY = @"story";
                                                                                                                      options:nil
                                                                                                                        error:&jsonError];
                                                         if (jsonError) {
+                                                            self->lastCachedPageName = @"-";
+                                                            
                                                             // [NSException raise:@"Exception on parsing JSON data" format:@"%@", jsonError.localizedDescription];
 
                                                             NSLog(@"returnWithUXMenApiError");
@@ -401,9 +439,9 @@ NSString *API_STORY = @"story";
 
                                                             return;
                                                         }
-
-                                                        statusResponse = [UXMenResponseStatus new];
-                                                        statusResponse.status = [jsonResponse[@"status"] intValue];;
+                                                        
+                                                        self->statusResponse = [UXMenResponseStatus new];
+                                                        self->statusResponse.status = [jsonResponse[@"status"] intValue];
 
                                                         // [self.delegate returnWithUXMenWireframe:statusResponse.status];
 

@@ -7,15 +7,14 @@
 //
 
 #import <UXMen_iOS_SDK/UXMenSDK.h>
-#import <UXMen_iOS_SDK/UXMenAPI.h>
 #import "UXMViewController.h"
+#import "SecondViewController.h"
 
 @interface UXMViewController ()
 
 @end
 
 @implementation UXMViewController {
-    UXMenAPI *uxMenApi;
 }
 
 - (void)viewDidLoad
@@ -26,15 +25,21 @@
 	UXMenSDK *uxMenSdk = [UXMenSDK new];
     [uxMenSdk sayHello];
 
-    uxMenApi = [UXMenAPI new];
-    [uxMenApi configure];
-
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)actionButton:(id)sender {
+    
+    // [self performSelector:NSSelectorFromString(@"crashme:") withObject:nil afterDelay:1];
+    
+    SecondViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 
 @end

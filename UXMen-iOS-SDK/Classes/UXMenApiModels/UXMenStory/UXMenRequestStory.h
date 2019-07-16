@@ -8,10 +8,10 @@
 
 @interface UXMenRequestStory : NSObject
 
+@property(nonatomic) double timestamp;
+
 @property(nonatomic, copy) NSString *session_id;
 @property(nonatomic, copy) NSString *page;
-
-@property(nonatomic, copy) NSString *timeStamp;
 
 @property(nonatomic, strong) NSMutableArray *wireframes;
 

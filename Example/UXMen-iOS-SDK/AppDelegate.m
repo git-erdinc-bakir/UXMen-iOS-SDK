@@ -7,9 +7,12 @@
 //
 
 #import <UXMen_iOS_SDK/UXMenGestureTrack.h>
+#import <UXMen_iOS_SDK/UXMenAPI.h>
 #import "AppDelegate.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    UXMenAPI *uxMenApi;    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -17,6 +20,9 @@
 
     [self.window handshake];
     [self.window startTracking];
+
+    uxMenApi = [UXMenAPI new];
+    [uxMenApi configure];
 
     return YES;
 }
