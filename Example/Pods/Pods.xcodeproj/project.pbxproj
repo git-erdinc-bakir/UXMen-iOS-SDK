@@ -7,40 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0960C2F32096516C908FD234B8D248A4 /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC37F19D378E31C6A6518B8DAFD8422 /* UXMen-iOS-SDK-dummy.m */; };
-		234A56D907B6BDFF53FAC3E03CB9A269 /* UXMenRequestStory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F4CDF3E0363295AFE4070131B1377C /* UXMenRequestStory.m */; };
-		24437B99013E320D9FCE2EAD11B90882 /* UXMenTrackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 14145D83D7A7664A12234642FDB7376F /* UXMenTrackGesture.m */; };
-		280860234F5F689F3329853FB9B0E560 /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A76268F146C99E678F3DA9F2A6FEFEA7 /* UXMenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32D0741F8143F6FDB74CB37B3A90068F /* UXMenGestureTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E6D7BE26CEB117ABA0B1698F19046 /* UXMenGestureTrack.m */; };
+		013C98393CDB2131B2E7DEF230010F40 /* UXMenDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CFC082F481D4C1C3E8719E15331AC1 /* UXMenDeviceManager.m */; };
+		078D0A567A530EF58442215BF2BF6772 /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A6A0B30C442207D835FCBBEBAB6CD0 /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17554263E4A1DDBCDB5A97F485E56990 /* UXMenRequestActionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2ED28EAE700778836542525A3BE883 /* UXMenRequestActionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B77F0B238082E7C11E371ECC93776B4 /* UXMenResponseHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = E5A4428BBBB96FC2543196131C5230FB /* UXMenResponseHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E0FF4D6C6D77C72A2CBEB45DFB198F /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC37F19D378E31C6A6518B8DAFD8422 /* UXMen-iOS-SDK-dummy.m */; };
+		2FA6147066499481311215A5FC76C508 /* UXMenRequestStory.h in Headers */ = {isa = PBXBuildFile; fileRef = 613E6E91C689062299ED60A53EB0F8C2 /* UXMenRequestStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3583B65E990C287E28D44802BC1139E0 /* UXMenResponseHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9727A5BB46D0B0E4A52B33A8D03D1C /* UXMenResponseHandshake.m */; };
 		36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		383FBB6C29B2711D11881F217843AD6D /* UXMenDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A514555968765C1C5BEE0E8C4F43FB61 /* UXMenDeviceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B5AC294DC97229ADDCEE810973D0500 /* UXMenRequestElementData.m in Sources */ = {isa = PBXBuildFile; fileRef = B26DE4A17457D9C03F807DA050FA9E52 /* UXMenRequestElementData.m */; };
 		3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
-		406606BC7C272D8C22F8844C99E32D95 /* UXMenResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 873FC545B7CBB54141D57BAF18A6F68F /* UXMenResponseStatus.m */; };
-		4330339FD8AE538BA74F47F2DE72B787 /* UXMenDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CFC082F481D4C1C3E8719E15331AC1 /* UXMenDeviceManager.m */; };
-		44482A53E65174ED73B671C0013FCEC9 /* UXMenResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A550DB7F3FFE3DD2CFA6119794805CE /* UXMenResponseStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45C16C4477BA37B25BF393C568FB8BCB /* UXMenRequestActionWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D70F6D006B66C95235062FF5F64D895A /* UXMenRequestActionWireframe.m */; };
+		3FCBA0DC10FFEA6D4FD986EF351FEBDD /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 06098AF7D1E42E22FC7C143C416DFD93 /* UXMenSDK.m */; };
+		43EF0CDDC4F914895FE88A6B45C754CC /* UXMenRequestWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C182DCBAEE58CF60B359772A89263F5A /* UXMenRequestWireFrame.m */; };
+		479EC5F4AAEDE05B07A1E69CF2CFE9CA /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A76268F146C99E678F3DA9F2A6FEFEA7 /* UXMenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */; };
-		4BE2A579ECD0952B33528A3594ED2F87 /* UXMenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B435CE1AA2B5953D4926CC76572BE /* UXMenAPI.m */; };
-		5CB6AC883621B0448C8185EC7BA94EDC /* UXMenRequestActionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C0F46CB096FDBD8F9BB5443A10A410 /* UXMenRequestActionData.m */; };
-		68007FDED63A6014A05DB3567990421F /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A6A0B30C442207D835FCBBEBAB6CD0 /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69DF3197389516130B04DE422326398F /* UXMenRequestWireFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 0566BE0F41B251E2431782EF870460A7 /* UXMenRequestWireFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F3E52BB3F5964F7B15EEACB444A7E03 /* UXMenRequestActionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 581F9F04462BE62A9AA21E4E4ED79D63 /* UXMenRequestActionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75382657D36EAAE34A020AB4132F46E7 /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 06098AF7D1E42E22FC7C143C416DFD93 /* UXMenSDK.m */; };
-		7CC6EBD760DE9B51CFB0E1A7BCA88FAF /* UXMenResponseHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = E60C3DB1EDD6A80A3A1996FEDE15556C /* UXMenResponseHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68B980F68209914C7D3B193DB47C4957 /* UXMenTrackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 14145D83D7A7664A12234642FDB7376F /* UXMenTrackGesture.m */; };
 		8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84D95D6E35472CB1816F7EFAF01D26EC /* UXMenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A02913A817BD51BCD72808E8D98AA7E2 /* UXMenAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85A7E03A8AFFD04F69E8FF77C7215F49 /* UXMenRequestWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 116B0DC4E421B335AB856820406AE2F1 /* UXMenRequestWireFrame.m */; };
-		97A533816F9C9E4379A4E4A8F9809127 /* UXMenTrackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BBB4F693B826488342217111F76CC2 /* UXMenTrackGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A01FAFD72EDC566253376C73587E2949 /* UXMenRequestStory.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B504375E5AE264603E8C6FC44FED15 /* UXMenRequestStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6870E5FBD50B979AC5009501D5E86A6 /* UXMenResponseHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374058B982282FF99F32545196A0319 /* UXMenResponseHandshake.m */; };
-		B8262C560C5FB2DEC6D09DDA2DB7C22D /* UXMenGestureTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1770E850B667312A8E110F21E03CC /* UXMenGestureTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B972243D4FB3152C6C1FF6552F8582A1 /* UXMenRequestHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E044B89F7F06365D9214826E24B098 /* UXMenRequestHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF65B008E3A446DDB7917BA5B7CA8149 /* UXMenRequestHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DAB85300023C8C80E056F6DFA7FCF6 /* UXMenRequestHandshake.m */; };
-		C3298B20E553882D912E130C74E9FD69 /* UXMenRequestActionWireframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBD404FAA8A00C854EA697FE6A98515 /* UXMenRequestActionWireframe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DBC5B6BCB1973201B1B6ABA76F73CAF /* UXMenRequestActionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 699155F34BBE7F7A53B1A5699A749B26 /* UXMenRequestActionData.m */; };
+		8F25B00715CA9F89AE10BA409D914273 /* UXMenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B435CE1AA2B5953D4926CC76572BE /* UXMenAPI.m */; };
+		9441277A8AD58EF4BDD1C00FB5F0308F /* UXMenDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A514555968765C1C5BEE0E8C4F43FB61 /* UXMenDeviceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A551FA8F60958891CD4758520A2D91DB /* UXMenGestureTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E6D7BE26CEB117ABA0B1698F19046 /* UXMenGestureTrack.m */; };
+		A6CA26656EF5EC546DD82DBC83ABC61C /* UXMenResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 844550C3E645CFEEDBC570B71814B512 /* UXMenResponseStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9DD0D3589DF5394A89150C308736F11 /* UXMenResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE6B6592A4C27B5CEA20FEAC4556099 /* UXMenResponseStatus.m */; };
+		B9B8EFF4B89852B8538F8F450D7002AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BE3E08EA73517AC13AA544190661BDEE /* UXMenRequestElementData.h in Headers */ = {isa = PBXBuildFile; fileRef = D27E6B60ECFB4117AE0729A8C2DCCFBD /* UXMenRequestElementData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE99C5BFCE948151F1855C70E8E6A9F0 /* UXMenTrackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BBB4F693B826488342217111F76CC2 /* UXMenTrackGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8E6C4C2B8AD84BC00834A406EBD22D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EE40434762913F9A60BFB1B35D8B95F7 /* UXMenRequestElementData.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD0B1C8FFA51D0D53835DD269C41019 /* UXMenRequestElementData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F54238F9A367E07D953FDE2DF1535E95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C968A342DF1DD3CB390992758ADD34FB /* UXMenRequestHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 8595559723B8270DA96E0A9BAE9DEA73 /* UXMenRequestHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D199A2A6172FDC556630546D747EFF2B /* UXMenRequestWireFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 4015B4C72925CA5FC9EFD5097755BB93 /* UXMenRequestWireFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA70F8997968E754F0A1675289B19820 /* UXMenRequestHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1D56241CB83E0094D241DAA132FD /* UXMenRequestHandshake.m */; };
+		DC91D67D3E70E5CBAC18BF17E98C3585 /* UXMenRequestStory.m in Sources */ = {isa = PBXBuildFile; fileRef = C76398D2F53F3E2FD2468475C7A9CF94 /* UXMenRequestStory.m */; };
+		DD6FF28EB0E735471369CE992958119D /* UXMenRequestElementData.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33BA3C91976FB4A0573FC3B40BEAEB /* UXMenRequestElementData.m */; };
+		E3B83A3399692C919EC4D8E5348D9B3B /* UXMenGestureTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1770E850B667312A8E110F21E03CC /* UXMenGestureTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85B75EBBE24014BB2221AB48DB56A70 /* UXMenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A02913A817BD51BCD72808E8D98AA7E2 /* UXMenAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE0768EF3D5E40BD1BAC4D2FB92F3786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,62 +61,60 @@
 
 /* Begin PBXFileReference section */
 		00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0566BE0F41B251E2431782EF870460A7 /* UXMenRequestWireFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestWireFrame.h; sourceTree = "<group>"; };
 		06098AF7D1E42E22FC7C143C416DFD93 /* UXMenSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UXMenSDK.m; path = "UXMen-iOS-SDK/Classes/UXMenSDK.m"; sourceTree = "<group>"; };
 		0B2B435CE1AA2B5953D4926CC76572BE /* UXMenAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UXMenAPI.m; path = "UXMen-iOS-SDK/Classes/UXMenAPI.m"; sourceTree = "<group>"; };
 		0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Tests.framework; path = "Pods-UXMen-iOS-SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC37F19D378E31C6A6518B8DAFD8422 /* UXMen-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UXMen-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
-		116B0DC4E421B335AB856820406AE2F1 /* UXMenRequestWireFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestWireFrame.m; sourceTree = "<group>"; };
 		14145D83D7A7664A12234642FDB7376F /* UXMenTrackGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenTrackGesture.m; sourceTree = "<group>"; };
-		16C0F46CB096FDBD8F9BB5443A10A410 /* UXMenRequestActionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestActionData.m; sourceTree = "<group>"; };
+		260F1D56241CB83E0094D241DAA132FD /* UXMenRequestHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestHandshake.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		364BBB4640B1F822759B3AA40070BDB4 /* Pods-UXMen-iOS-SDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UXMen-iOS-SDK_Tests.modulemap"; sourceTree = "<group>"; };
 		3A799C3CE3BFD9CA5705BFE633FD2C29 /* Pods-UXMen-iOS-SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4015B4C72925CA5FC9EFD5097755BB93 /* UXMenRequestWireFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestWireFrame.h; sourceTree = "<group>"; };
 		422932CA025E19FD84BB44071BD35953 /* Pods-UXMen-iOS-SDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		440CE45AC6C3D4D11B3A78651A47081A /* Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C2ED28EAE700778836542525A3BE883 /* UXMenRequestActionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestActionData.h; sourceTree = "<group>"; };
 		518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UXMen_iOS_SDK.framework; path = "UXMen-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		535819193B98EEF1764ED753DEB49436 /* UXMen-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UXMen-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
 		56B177576FE99E26705CDB7374A28D8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		581F9F04462BE62A9AA21E4E4ED79D63 /* UXMenRequestActionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestActionData.h; sourceTree = "<group>"; };
-		5CBD404FAA8A00C854EA697FE6A98515 /* UXMenRequestActionWireframe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestActionWireframe.h; sourceTree = "<group>"; };
 		5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Example-dummy.m"; sourceTree = "<group>"; };
-		6374058B982282FF99F32545196A0319 /* UXMenResponseHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseHandshake.m; sourceTree = "<group>"; };
-		64E044B89F7F06365D9214826E24B098 /* UXMenRequestHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestHandshake.h; sourceTree = "<group>"; };
+		613E6E91C689062299ED60A53EB0F8C2 /* UXMenRequestStory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestStory.h; sourceTree = "<group>"; };
+		699155F34BBE7F7A53B1A5699A749B26 /* UXMenRequestActionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestActionData.m; sourceTree = "<group>"; };
 		70BB6329AF51BDF9FEA5778AEE0541CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		7A550DB7F3FFE3DD2CFA6119794805CE /* UXMenResponseStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseStatus.h; sourceTree = "<group>"; };
 		7A9E33E8CB28FC50FCC64D968271D594 /* Pods-UXMen-iOS-SDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-Info.plist"; sourceTree = "<group>"; };
 		7BE4ADBFE8A2573AF90EB920E236D023 /* Pods-UXMen-iOS-SDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8146B73AFE142559B725D9B544E3923F /* UXMen-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UXMen-iOS-SDK.modulemap"; sourceTree = "<group>"; };
 		819E76989484A49786606F5E55C1EA06 /* Pods-UXMen-iOS-SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82CFC082F481D4C1C3E8719E15331AC1 /* UXMenDeviceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenDeviceManager.m; sourceTree = "<group>"; };
+		844550C3E645CFEEDBC570B71814B512 /* UXMenResponseStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseStatus.h; sourceTree = "<group>"; };
+		8595559723B8270DA96E0A9BAE9DEA73 /* UXMenRequestHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestHandshake.h; sourceTree = "<group>"; };
 		86BBB4F693B826488342217111F76CC2 /* UXMenTrackGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenTrackGesture.h; sourceTree = "<group>"; };
-		873FC545B7CBB54141D57BAF18A6F68F /* UXMenResponseStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseStatus.m; sourceTree = "<group>"; };
 		8B5E6D7BE26CEB117ABA0B1698F19046 /* UXMenGestureTrack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenGestureTrack.m; sourceTree = "<group>"; };
-		93B504375E5AE264603E8C6FC44FED15 /* UXMenRequestStory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestStory.h; sourceTree = "<group>"; };
 		96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Example.framework; path = "Pods-UXMen-iOS-SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A02913A817BD51BCD72808E8D98AA7E2 /* UXMenAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UXMenAPI.h; path = "UXMen-iOS-SDK/Classes/UXMenAPI.h"; sourceTree = "<group>"; };
-		A3F4CDF3E0363295AFE4070131B1377C /* UXMenRequestStory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestStory.m; sourceTree = "<group>"; };
 		A514555968765C1C5BEE0E8C4F43FB61 /* UXMenDeviceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenDeviceManager.h; sourceTree = "<group>"; };
 		A76268F146C99E678F3DA9F2A6FEFEA7 /* UXMenSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UXMenSDK.h; path = "UXMen-iOS-SDK/Classes/UXMenSDK.h"; sourceTree = "<group>"; };
 		A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9D9DAA138F0BF0ECB4C0CE4EB4DD5C5 /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC9727A5BB46D0B0E4A52B33A8D03D1C /* UXMenResponseHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseHandshake.m; sourceTree = "<group>"; };
 		AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B03A808F9C9C718008D575BAABC212E9 /* Pods-UXMen-iOS-SDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B0726F0D70F86D90E023CE274C515894 /* UXMen-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
-		B26DE4A17457D9C03F807DA050FA9E52 /* UXMenRequestElementData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestElementData.m; sourceTree = "<group>"; };
 		B7EEEA78EC5A21AB6CDBD7875F31B8ED /* UXMen-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UXMen-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		B8A6A0B30C442207D835FCBBEBAB6CD0 /* UXMen-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
+		C182DCBAEE58CF60B359772A89263F5A /* UXMenRequestWireFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestWireFrame.m; sourceTree = "<group>"; };
 		C3E4E75D66A83504E83099C8443FC619 /* Pods-UXMen-iOS-SDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C604C7AED96B8A7AC724A244E5335270 /* Pods-UXMen-iOS-SDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UXMen-iOS-SDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C76398D2F53F3E2FD2468475C7A9CF94 /* UXMenRequestStory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestStory.m; sourceTree = "<group>"; };
 		CB7DFA42F2965F142D5155F2D7955A01 /* Pods-UXMen-iOS-SDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UXMen-iOS-SDK_Example.modulemap"; sourceTree = "<group>"; };
+		CBE6B6592A4C27B5CEA20FEAC4556099 /* UXMenResponseStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseStatus.m; sourceTree = "<group>"; };
+		D27E6B60ECFB4117AE0729A8C2DCCFBD /* UXMenRequestElementData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestElementData.h; sourceTree = "<group>"; };
 		D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		D70F6D006B66C95235062FF5F64D895A /* UXMenRequestActionWireframe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestActionWireframe.m; sourceTree = "<group>"; };
 		D8F1770E850B667312A8E110F21E03CC /* UXMenGestureTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenGestureTrack.h; sourceTree = "<group>"; };
-		E4DAB85300023C8C80E056F6DFA7FCF6 /* UXMenRequestHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestHandshake.m; sourceTree = "<group>"; };
-		E60C3DB1EDD6A80A3A1996FEDE15556C /* UXMenResponseHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseHandshake.h; sourceTree = "<group>"; };
-		FDD0B1C8FFA51D0D53835DD269C41019 /* UXMenRequestElementData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestElementData.h; sourceTree = "<group>"; };
+		DF33BA3C91976FB4A0573FC3B40BEAEB /* UXMenRequestElementData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestElementData.m; sourceTree = "<group>"; };
+		E5A4428BBBB96FC2543196131C5230FB /* UXMenResponseHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseHandshake.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,19 +126,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EFC93C2860212A241113D3E7C300572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B8EFF4B89852B8538F8F450D7002AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73EB563B178A1738AFF5506E29896844 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE0768EF3D5E40BD1BAC4D2FB92F3786 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB5688094F9F5DC51707301C448FF65E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F54238F9A367E07D953FDE2DF1535E95 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,11 +154,39 @@
 				06098AF7D1E42E22FC7C143C416DFD93 /* UXMenSDK.m */,
 				8744DE479A069960F51794335B32AA18 /* Pod */,
 				5470BC3660BBF4B9043412461FE14784 /* Support Files */,
-				55BC3EB4BC4F95BA7C779FC98DB71B43 /* UXMenApiModels */,
+				CCDD779501775B2B0D2DB18991190735 /* UXMenApiModels */,
 				AB0DC6EF8760653D75240F7E9B672C49 /* UXMenLogic */,
 			);
 			name = "UXMen-iOS-SDK";
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		01AD7566F937702C4FF17D6CA88CE0CB /* UXMenHandshake */ = {
+			isa = PBXGroup;
+			children = (
+				8595559723B8270DA96E0A9BAE9DEA73 /* UXMenRequestHandshake.h */,
+				260F1D56241CB83E0094D241DAA132FD /* UXMenRequestHandshake.m */,
+				E5A4428BBBB96FC2543196131C5230FB /* UXMenResponseHandshake.h */,
+				AC9727A5BB46D0B0E4A52B33A8D03D1C /* UXMenResponseHandshake.m */,
+			);
+			name = UXMenHandshake;
+			path = UXMenHandshake;
+			sourceTree = "<group>";
+		};
+		143AF4519B4BB90D81B0AEE05E109C95 /* UXMenStory */ = {
+			isa = PBXGroup;
+			children = (
+				4C2ED28EAE700778836542525A3BE883 /* UXMenRequestActionData.h */,
+				699155F34BBE7F7A53B1A5699A749B26 /* UXMenRequestActionData.m */,
+				D27E6B60ECFB4117AE0729A8C2DCCFBD /* UXMenRequestElementData.h */,
+				DF33BA3C91976FB4A0573FC3B40BEAEB /* UXMenRequestElementData.m */,
+				613E6E91C689062299ED60A53EB0F8C2 /* UXMenRequestStory.h */,
+				C76398D2F53F3E2FD2468475C7A9CF94 /* UXMenRequestStory.m */,
+				4015B4C72925CA5FC9EFD5097755BB93 /* UXMenRequestWireFrame.h */,
+				C182DCBAEE58CF60B359772A89263F5A /* UXMenRequestWireFrame.m */,
+			);
+			name = UXMenStory;
+			path = UXMenStory;
 			sourceTree = "<group>";
 		};
 		18E27773790AB05E6EA0874B1601863C /* Pods-UXMen-iOS-SDK_Tests */ = {
@@ -213,36 +237,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55BC3EB4BC4F95BA7C779FC98DB71B43 /* UXMenApiModels */ = {
-			isa = PBXGroup;
-			children = (
-				7A550DB7F3FFE3DD2CFA6119794805CE /* UXMenResponseStatus.h */,
-				873FC545B7CBB54141D57BAF18A6F68F /* UXMenResponseStatus.m */,
-				7F626A49E0BF5BEA71857E07996500B1 /* UXMenHandshake */,
-				64745FC2B7E5CC1E1B292C563F564FC2 /* UXMenStory */,
-			);
-			name = UXMenApiModels;
-			path = "UXMen-iOS-SDK/Classes/UXMenApiModels";
-			sourceTree = "<group>";
-		};
-		64745FC2B7E5CC1E1B292C563F564FC2 /* UXMenStory */ = {
-			isa = PBXGroup;
-			children = (
-				581F9F04462BE62A9AA21E4E4ED79D63 /* UXMenRequestActionData.h */,
-				16C0F46CB096FDBD8F9BB5443A10A410 /* UXMenRequestActionData.m */,
-				5CBD404FAA8A00C854EA697FE6A98515 /* UXMenRequestActionWireframe.h */,
-				D70F6D006B66C95235062FF5F64D895A /* UXMenRequestActionWireframe.m */,
-				FDD0B1C8FFA51D0D53835DD269C41019 /* UXMenRequestElementData.h */,
-				B26DE4A17457D9C03F807DA050FA9E52 /* UXMenRequestElementData.m */,
-				93B504375E5AE264603E8C6FC44FED15 /* UXMenRequestStory.h */,
-				A3F4CDF3E0363295AFE4070131B1377C /* UXMenRequestStory.m */,
-				0566BE0F41B251E2431782EF870460A7 /* UXMenRequestWireFrame.h */,
-				116B0DC4E421B335AB856820406AE2F1 /* UXMenRequestWireFrame.m */,
-			);
-			name = UXMenStory;
-			path = UXMenStory;
-			sourceTree = "<group>";
-		};
 		74BF1A5E9D697767665CCCAF3CBC3A62 /* Pods-UXMen-iOS-SDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,18 +252,6 @@
 			);
 			name = "Pods-UXMen-iOS-SDK_Example";
 			path = "Target Support Files/Pods-UXMen-iOS-SDK_Example";
-			sourceTree = "<group>";
-		};
-		7F626A49E0BF5BEA71857E07996500B1 /* UXMenHandshake */ = {
-			isa = PBXGroup;
-			children = (
-				64E044B89F7F06365D9214826E24B098 /* UXMenRequestHandshake.h */,
-				E4DAB85300023C8C80E056F6DFA7FCF6 /* UXMenRequestHandshake.m */,
-				E60C3DB1EDD6A80A3A1996FEDE15556C /* UXMenResponseHandshake.h */,
-				6374058B982282FF99F32545196A0319 /* UXMenResponseHandshake.m */,
-			);
-			name = UXMenHandshake;
-			path = UXMenHandshake;
 			sourceTree = "<group>";
 		};
 		8744DE479A069960F51794335B32AA18 /* Pod */ = {
@@ -304,6 +286,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		CCDD779501775B2B0D2DB18991190735 /* UXMenApiModels */ = {
+			isa = PBXGroup;
+			children = (
+				844550C3E645CFEEDBC570B71814B512 /* UXMenResponseStatus.h */,
+				CBE6B6592A4C27B5CEA20FEAC4556099 /* UXMenResponseStatus.m */,
+				01AD7566F937702C4FF17D6CA88CE0CB /* UXMenHandshake */,
+				143AF4519B4BB90D81B0AEE05E109C95 /* UXMenStory */,
+			);
+			name = UXMenApiModels;
+			path = "UXMen-iOS-SDK/Classes/UXMenApiModels";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -335,24 +329,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6765CC643CA273CB5502AFF16B066CDA /* Headers */ = {
+		018777706D3D41C10A0D1E13AC1D872F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68007FDED63A6014A05DB3567990421F /* UXMen-iOS-SDK-umbrella.h in Headers */,
-				84D95D6E35472CB1816F7EFAF01D26EC /* UXMenAPI.h in Headers */,
-				383FBB6C29B2711D11881F217843AD6D /* UXMenDeviceManager.h in Headers */,
-				B8262C560C5FB2DEC6D09DDA2DB7C22D /* UXMenGestureTrack.h in Headers */,
-				6F3E52BB3F5964F7B15EEACB444A7E03 /* UXMenRequestActionData.h in Headers */,
-				C3298B20E553882D912E130C74E9FD69 /* UXMenRequestActionWireframe.h in Headers */,
-				EE40434762913F9A60BFB1B35D8B95F7 /* UXMenRequestElementData.h in Headers */,
-				B972243D4FB3152C6C1FF6552F8582A1 /* UXMenRequestHandshake.h in Headers */,
-				A01FAFD72EDC566253376C73587E2949 /* UXMenRequestStory.h in Headers */,
-				69DF3197389516130B04DE422326398F /* UXMenRequestWireFrame.h in Headers */,
-				7CC6EBD760DE9B51CFB0E1A7BCA88FAF /* UXMenResponseHandshake.h in Headers */,
-				44482A53E65174ED73B671C0013FCEC9 /* UXMenResponseStatus.h in Headers */,
-				280860234F5F689F3329853FB9B0E560 /* UXMenSDK.h in Headers */,
-				97A533816F9C9E4379A4E4A8F9809127 /* UXMenTrackGesture.h in Headers */,
+				078D0A567A530EF58442215BF2BF6772 /* UXMen-iOS-SDK-umbrella.h in Headers */,
+				F85B75EBBE24014BB2221AB48DB56A70 /* UXMenAPI.h in Headers */,
+				9441277A8AD58EF4BDD1C00FB5F0308F /* UXMenDeviceManager.h in Headers */,
+				E3B83A3399692C919EC4D8E5348D9B3B /* UXMenGestureTrack.h in Headers */,
+				17554263E4A1DDBCDB5A97F485E56990 /* UXMenRequestActionData.h in Headers */,
+				BE3E08EA73517AC13AA544190661BDEE /* UXMenRequestElementData.h in Headers */,
+				C968A342DF1DD3CB390992758ADD34FB /* UXMenRequestHandshake.h in Headers */,
+				2FA6147066499481311215A5FC76C508 /* UXMenRequestStory.h in Headers */,
+				D199A2A6172FDC556630546D747EFF2B /* UXMenRequestWireFrame.h in Headers */,
+				1B77F0B238082E7C11E371ECC93776B4 /* UXMenResponseHandshake.h in Headers */,
+				A6CA26656EF5EC546DD82DBC83ABC61C /* UXMenResponseStatus.h in Headers */,
+				479EC5F4AAEDE05B07A1E69CF2CFE9CA /* UXMenSDK.h in Headers */,
+				BE99C5BFCE948151F1855C70E8E6A9F0 /* UXMenTrackGesture.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +370,12 @@
 /* Begin PBXNativeTarget section */
 		07CB366C0D7BE3388F8A0F6A889A845F /* UXMen-iOS-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E68B5A3988D61047D7D563748C667C8B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
+			buildConfigurationList = F52FEE2A8FCA8EFB764C71C3EA84F362 /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
 			buildPhases = (
-				6765CC643CA273CB5502AFF16B066CDA /* Headers */,
-				D17BE3D2A7A116BD2CFC09B98E98AF86 /* Sources */,
-				FB5688094F9F5DC51707301C448FF65E /* Frameworks */,
-				A3A07F0C054D6AC3E9606119470F7F9E /* Resources */,
+				018777706D3D41C10A0D1E13AC1D872F /* Headers */,
+				951F345E33EECB80922BDDCB69C8EA05 /* Sources */,
+				5EFC93C2860212A241113D3E7C300572 /* Frameworks */,
+				AD66C544A0A68955DE4FFD50C1CFDBE2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -467,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3A07F0C054D6AC3E9606119470F7F9E /* Resources */ = {
+		AD66C544A0A68955DE4FFD50C1CFDBE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,32 +485,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		951F345E33EECB80922BDDCB69C8EA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E0FF4D6C6D77C72A2CBEB45DFB198F /* UXMen-iOS-SDK-dummy.m in Sources */,
+				8F25B00715CA9F89AE10BA409D914273 /* UXMenAPI.m in Sources */,
+				013C98393CDB2131B2E7DEF230010F40 /* UXMenDeviceManager.m in Sources */,
+				A551FA8F60958891CD4758520A2D91DB /* UXMenGestureTrack.m in Sources */,
+				8DBC5B6BCB1973201B1B6ABA76F73CAF /* UXMenRequestActionData.m in Sources */,
+				DD6FF28EB0E735471369CE992958119D /* UXMenRequestElementData.m in Sources */,
+				DA70F8997968E754F0A1675289B19820 /* UXMenRequestHandshake.m in Sources */,
+				DC91D67D3E70E5CBAC18BF17E98C3585 /* UXMenRequestStory.m in Sources */,
+				43EF0CDDC4F914895FE88A6B45C754CC /* UXMenRequestWireFrame.m in Sources */,
+				3583B65E990C287E28D44802BC1139E0 /* UXMenResponseHandshake.m in Sources */,
+				A9DD0D3589DF5394A89150C308736F11 /* UXMenResponseStatus.m in Sources */,
+				3FCBA0DC10FFEA6D4FD986EF351FEBDD /* UXMenSDK.m in Sources */,
+				68B980F68209914C7D3B193DB47C4957 /* UXMenTrackGesture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4ABA7161FA1372B08A22162E2EC4D92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D17BE3D2A7A116BD2CFC09B98E98AF86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0960C2F32096516C908FD234B8D248A4 /* UXMen-iOS-SDK-dummy.m in Sources */,
-				4BE2A579ECD0952B33528A3594ED2F87 /* UXMenAPI.m in Sources */,
-				4330339FD8AE538BA74F47F2DE72B787 /* UXMenDeviceManager.m in Sources */,
-				32D0741F8143F6FDB74CB37B3A90068F /* UXMenGestureTrack.m in Sources */,
-				5CB6AC883621B0448C8185EC7BA94EDC /* UXMenRequestActionData.m in Sources */,
-				45C16C4477BA37B25BF393C568FB8BCB /* UXMenRequestActionWireframe.m in Sources */,
-				3B5AC294DC97229ADDCEE810973D0500 /* UXMenRequestElementData.m in Sources */,
-				BF65B008E3A446DDB7917BA5B7CA8149 /* UXMenRequestHandshake.m in Sources */,
-				234A56D907B6BDFF53FAC3E03CB9A269 /* UXMenRequestStory.m in Sources */,
-				85A7E03A8AFFD04F69E8FF77C7215F49 /* UXMenRequestWireFrame.m in Sources */,
-				B6870E5FBD50B979AC5009501D5E86A6 /* UXMenResponseHandshake.m in Sources */,
-				406606BC7C272D8C22F8844C99E32D95 /* UXMenResponseStatus.m in Sources */,
-				75382657D36EAAE34A020AB4132F46E7 /* UXMenSDK.m in Sources */,
-				24437B99013E320D9FCE2EAD11B90882 /* UXMenTrackGesture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +755,7 @@
 			};
 			name = Debug;
 		};
-		AC07201169CF86ADD52DEFBE21426023 /* Debug */ = {
+		A8FA8E6BC9E9751F169587423ED98F0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7EEEA78EC5A21AB6CDBD7875F31B8ED /* UXMen-iOS-SDK.xcconfig */;
 			buildSettings = {
@@ -789,10 +781,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		BA0B7DF83EBBD09F147F42C3E39675EE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -828,7 +821,7 @@
 			};
 			name = Release;
 		};
-		C19DF1B551A9212B4A30DFB1C3C236CC /* Release */ = {
+		EF62A2F99874AC795C221DDF25A10D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7EEEA78EC5A21AB6CDBD7875F31B8ED /* UXMen-iOS-SDK.xcconfig */;
 			buildSettings = {
@@ -854,11 +847,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -890,11 +882,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E68B5A3988D61047D7D563748C667C8B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
+		F52FEE2A8FCA8EFB764C71C3EA84F362 /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC07201169CF86ADD52DEFBE21426023 /* Debug */,
-				C19DF1B551A9212B4A30DFB1C3C236CC /* Release */,
+				EF62A2F99874AC795C221DDF25A10D1D /* Debug */,
+				A8FA8E6BC9E9751F169587423ED98F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

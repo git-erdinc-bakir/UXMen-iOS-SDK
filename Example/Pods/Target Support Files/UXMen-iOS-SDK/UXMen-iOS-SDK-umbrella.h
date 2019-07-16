@@ -15,7 +15,6 @@
 #import "UXMenResponseHandshake.h"
 #import "UXMenResponseStatus.h"
 #import "UXMenRequestActionData.h"
-#import "UXMenRequestActionWireframe.h"
 #import "UXMenRequestElementData.h"
 #import "UXMenRequestStory.h"
 #import "UXMenRequestWireFrame.h"

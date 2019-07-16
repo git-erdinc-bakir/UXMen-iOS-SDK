@@ -153,9 +153,23 @@ NSString *API_STORY = @"story";
 #pragma mark WIREFRAME OPERATIONS
 
 - (NSMutableArray *)getViewComponents {
+    NSLog(@"getViewComponents");
 
-    UINavigationController *controller = (UINavigationController *) self->delegate.window.rootViewController;
-    UIViewController *topViewController = [[controller viewControllers] lastObject];
+    UIViewController *topViewController = [UIViewController new];
+    topViewController.view = [UIView new];
+
+//    if ([self->delegate.window.rootViewController class] == [UIViewController class]) {
+//        NSLog(@"getViewComponents UIViewController class");
+//        topViewController = self->delegate.window.rootViewController;
+//
+//    } else if ([self->delegate.window.rootViewController class] == [UINavigationController class]) {
+//        NSLog(@"getViewComponents UINavigationController class");
+//        UINavigationController *controller = (UINavigationController *) self->delegate.window.rootViewController;
+////        topViewController = [[controller viewControllers] lastObject];
+//
+//
+//    }
+
     UIView *currentView = topViewController.view;
 
     NSLog(@"CONTAINER VIEW X      : %f", currentView.frame.origin.x);
