@@ -7,13 +7,16 @@
 //
 
 #import <UXMen_iOS_SDK/UXMenSDK.h>
+#import <UXMen_iOS_SDK/UXMenAPI.h>
 #import "UXMViewController.h"
 
 @interface UXMViewController ()
 
 @end
 
-@implementation UXMViewController
+@implementation UXMViewController {
+    UXMenAPI *uxMenApi;
+}
 
 - (void)viewDidLoad
 {
@@ -22,6 +25,9 @@
 
 	UXMenSDK *uxMenSdk = [UXMenSDK new];
     [uxMenSdk sayHello];
+
+    uxMenApi = [UXMenAPI new];
+    [uxMenApi configure];
 
 }
 

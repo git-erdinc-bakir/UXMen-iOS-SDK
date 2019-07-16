@@ -1,18 +1,23 @@
 //
-//  UXMAppDelegate.m
+//  AppDelegate.m
 //  UXMen-iOS-SDK
 //
 //  Created by git-erdinc-bakir on 07/07/2019.
 //  Copyright (c) 2019 git-erdinc-bakir. All rights reserved.
 //
 
-#import "UXMAppDelegate.h"
+#import <UXMen_iOS_SDK/UXMenGestureTrack.h>
+#import "AppDelegate.h"
 
-@implementation UXMAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    [self.window handshake];
+    [self.window startTracking];
+
     return YES;
 }
 

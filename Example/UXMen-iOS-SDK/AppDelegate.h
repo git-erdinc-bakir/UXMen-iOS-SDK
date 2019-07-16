@@ -1,5 +1,5 @@
 //
-//  UXMAppDelegate.h
+//  AppDelegate.h
 //  UXMen-iOS-SDK
 //
 //  Created by git-erdinc-bakir on 07/07/2019.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface UXMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

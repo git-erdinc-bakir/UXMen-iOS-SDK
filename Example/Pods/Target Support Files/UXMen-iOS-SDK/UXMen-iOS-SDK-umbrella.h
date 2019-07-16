@@ -10,6 +10,18 @@
 #endif
 #endif
 
+#import "UXMenAPI.h"
+#import "UXMenRequestHandshake.h"
+#import "UXMenResponseHandshake.h"
+#import "UXMenResponseStatus.h"
+#import "UXMenRequestActionData.h"
+#import "UXMenRequestActionWireframe.h"
+#import "UXMenRequestElementData.h"
+#import "UXMenRequestStory.h"
+#import "UXMenRequestWireFrame.h"
+#import "UXMenDeviceManager.h"
+#import "UXMenGestureTrack.h"
+#import "UXMenTrackGesture.h"
 #import "UXMenSDK.h"
 
 FOUNDATION_EXPORT double UXMen_iOS_SDKVersionNumber;
