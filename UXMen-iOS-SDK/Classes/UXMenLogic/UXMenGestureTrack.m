@@ -7,12 +7,15 @@
 //
 
 #import "UXMenGestureTrack.h"
+
 #import <objc/runtime.h>
 
 #pragma mark - UXMenTrackGesture Category
 
 @interface UXMenTrackGesture (Private)
+
 + (UXMenTrackGesture *)sharedInstace;
+
 @end
 
 #pragma mark -  UXMenGestureTrack
@@ -23,8 +26,7 @@
 
 @property(nonatomic, assign) CGFloat dotWidth;
 
-@property(nonatomic, strong) NSMutableArray *arrayLocations;
-@property(nonatomic, strong) NSMutableArray *arrayWeights;
+@property(nonatomic, strong) NSMutableArray *arrayTouches;
 
 @end
 
@@ -53,8 +55,7 @@
     NSLog(@"finishInit");
 
     NSLog(@"TRACKER OTURUM BAŞLATILDI");
-    _arrayLocations = [NSMutableArray new];
-    _arrayWeights = [NSMutableArray new];
+    _arrayTouches = [NSMutableArray new];
 
     self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     touchGesture = [UXMenTrackGesture sharedInstace];
@@ -83,12 +84,36 @@
     NSMutableSet *seenKeys = [NSMutableSet set];
     CGPoint loc = [t locationInView:self];
 
-    [_arrayWeights addObject:@1];
-    [_arrayLocations addObject:[NSValue valueWithCGPoint:CGPointMake(loc.x, loc.y)]];
+    UXMenTouchUpdateModel *modelTouch = [UXMenTouchUpdateModel new];
+    modelTouch.weight = @1;
+    modelTouch.touchLocation = [NSValue valueWithCGPoint:CGPointMake(loc.x, loc.y)];
     
-    NSValue *val = [_arrayLocations lastObject];
-    CGPoint p = [val CGPointValue];
-    NSLog(@"TIKLANAN KOORDİNAT X:%f Y:%f", p.x, p.y);
+    UIViewController *topViewController = [UIViewController new];
+    topViewController.view = [UIView new];
+    
+    if ([self.window.rootViewController isKindOfClass:[UINavigationController class]]) {
+        //        NSLog(@"getViewComponents UINavigationController class");
+        UINavigationController *controller = (UINavigationController *) self.window.rootViewController;
+        topViewController = [[controller viewControllers] lastObject];
+        
+    } else if ([self.window.rootViewController isKindOfClass:[UIViewController class]]) {
+        //        NSLog(@"getViewComponents UIViewController class");
+        topViewController = self.window.rootViewController;
+        
+    } else {
+        NSLog(@"getViewComponents class");
+        NSLog(@"%@", [NSString stringWithFormat:@"%@", [self.window.rootViewController class] ]);
+        
+    }
+    modelTouch.pageName = NSStringFromClass([topViewController class]);
+    
+    [_arrayTouches addObject:modelTouch];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"UXMenTouchNotification" object:self];
+    
+    // NSValue *val = modelTouch.touchLocation;
+    // CGPoint p = [val CGPointValue];
+    // NSLog(@"TIKLANAN KOORDİNAT X:%f Y:%f", p.x, p.y);
 
     NSNumber *key = @(t.hash);
     [seenKeys addObject:key];
@@ -196,11 +221,6 @@ const static char *UXMenGestureTrackView = "UXMenGestureTrackView";
 
 @implementation UIWindow (tracking)
 
-- (void)handshake {
-    NSLog(@"handshake");
-
-}
-
 - (void)startTracking {
     NSLog(@"startTracking");
 
@@ -212,18 +232,15 @@ const static char *UXMenGestureTrackView = "UXMenGestureTrackView";
 }
 
 - (NSMutableArray *)getTouchLocations {
-    return self.for_track.arrayLocations;
+    return self.for_track.arrayTouches;
 }
 
-- (NSMutableArray *)getTouchWeights {
-    return self.for_track.arrayWeights;
+- (void)removeFirstTouchRecord {
+    [self.for_track.arrayTouches removeObjectAtIndex:0];
 }
 
 - (void)resetTouchRecords {
-
-    [self.for_track.arrayLocations removeAllObjects];
-    [self.for_track.arrayWeights removeAllObjects];
-
+    [self.for_track.arrayTouches removeAllObjects];
 }
 
 - (void)endTracking {

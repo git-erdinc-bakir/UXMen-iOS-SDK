@@ -35,10 +35,18 @@
 
 - (IBAction)actionButton:(id)sender {
     
-    // [self performSelector:NSSelectorFromString(@"crashme:") withObject:nil afterDelay:1];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+                                                                   message:@"This is an alert."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-    SecondViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
-    [self.navigationController pushViewController:controller animated:YES];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+//    SecondViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+//    [self.navigationController pushViewController:controller animated:YES];
     
 }
 

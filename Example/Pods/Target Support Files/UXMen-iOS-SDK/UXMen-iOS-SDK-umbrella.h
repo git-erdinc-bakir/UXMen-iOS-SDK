@@ -20,6 +20,7 @@
 #import "UXMenRequestWireFrame.h"
 #import "UXMenDeviceManager.h"
 #import "UXMenGestureTrack.h"
+#import "UXMenTouchUpdateModel.h"
 #import "UXMenTrackGesture.h"
 #import "UXMenSDK.h"
 

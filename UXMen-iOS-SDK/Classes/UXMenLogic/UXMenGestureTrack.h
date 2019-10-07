@@ -7,17 +7,18 @@
 //
 
 #import "UXMenTrackGesture.h"
+#import "UXMenTouchUpdateModel.h"
 
 @interface UIWindow (tracking)
-
-- (void)handshake;
 
 - (void)startTracking;
 
 - (NSMutableArray *)getTouchLocations;
-- (NSMutableArray *)getTouchWeights;
 
 - (void)endTracking;
 
+- (void)removeFirstTouchRecord;
+
 - (void)resetTouchRecords;
+
 @end

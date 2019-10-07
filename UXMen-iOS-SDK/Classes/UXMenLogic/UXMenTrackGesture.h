@@ -20,14 +20,11 @@
 
 @end
 
-
-
 @interface UXMenTrackGesture : UIGestureRecognizer <UIGestureRecognizerDelegate>
 
 @property (readonly) NSSet *activeTouches;
 
 @property (nonatomic, weak) NSObject<UXMenGestureDelegate>* touchDelegate;
-
 
 - (instancetype) init NS_UNAVAILABLE;
 

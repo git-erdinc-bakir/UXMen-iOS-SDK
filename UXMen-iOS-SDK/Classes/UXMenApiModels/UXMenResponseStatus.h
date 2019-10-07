@@ -10,4 +10,6 @@
 
 @property(nonatomic) int status;
 
+@property(nonatomic, copy) NSString *result;
+
 @end

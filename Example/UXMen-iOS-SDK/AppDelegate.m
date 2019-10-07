@@ -6,23 +6,17 @@
 //  Copyright (c) 2019 git-erdinc-bakir. All rights reserved.
 //
 
-#import <UXMen_iOS_SDK/UXMenGestureTrack.h>
 #import <UXMen_iOS_SDK/UXMenAPI.h>
 #import "AppDelegate.h"
 
-@implementation AppDelegate {
-    UXMenAPI *uxMenApi;    
-}
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
 
-    [self.window handshake];
-    [self.window startTracking];
-
-    uxMenApi = [UXMenAPI new];
-    [uxMenApi configure];
+    [UXMenAPI.shared startTracking:self.window];
+    [UXMenAPI.shared configure];
 
     return YES;
 }
