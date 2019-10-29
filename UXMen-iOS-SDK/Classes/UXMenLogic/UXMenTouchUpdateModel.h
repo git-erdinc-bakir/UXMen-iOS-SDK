@@ -11,8 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UXMenTouchUpdateModel : NSObject
 
-@property(nonatomic, copy) NSValue *weight;
+@property(nonatomic) double timestamp;
 
+@property(nonatomic, copy) NSValue *weight;
 @property(nonatomic, copy) NSValue *touchLocation;
 
 @property(nonatomic, copy) NSString *pageName;

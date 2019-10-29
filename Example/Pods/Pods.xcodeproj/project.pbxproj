@@ -7,52 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14DF2327B2A8980FCEE035AA4C5A4C50 /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 387C98ABF95705CF81264C1CC867F7A2 /* UXMenSDK.m */; };
-		28BBD76A9737BB10F205AC493EE9367D /* UXMenRequestActionData.m in Sources */ = {isa = PBXBuildFile; fileRef = D00DD7C9B92069FA6D3345A93E5D5DBA /* UXMenRequestActionData.m */; };
-		2A91CCDDB07CF8CB6AD3E62DF1D71DF9 /* UXMenTrackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74A64856E1774E156675D21DE53435 /* UXMenTrackGesture.m */; };
-		2DA6109BDA40A8CA689237D85AC5B60A /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA3331EABA69A6BBF30D2CD88447644 /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3058DF72C50F59BD29D92ADFAE1766E7 /* UXMenRequestElementData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424253DF147B4493DD57EDA2AC6F57C /* UXMenRequestElementData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
-		44C8D425EC2904D77FCD70255CF4B592 /* UXMenResponseHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313C45551A26135A09123F43DF58A8 /* UXMenResponseHandshake.m */; };
-		491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */; };
-		50B3BDCFD64F0C570F25E26E960D8978 /* UXMenResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5B61399DBFC7DF1B16B7F8C4A9DB3A /* UXMenResponseStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5184574CA8B704B473EC90D3F03CE378 /* UXMenRequestActionData.h in Headers */ = {isa = PBXBuildFile; fileRef = B283F3775ACF4D97C3C3688544CFCC54 /* UXMenRequestActionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ABE3DA10252A6162FBDB997876EDD77 /* UXMenResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B8460BDD0FA22668FC8532BCB26ED17F /* UXMenResponseStatus.m */; };
-		727483A9F7037C69749970FF4475CB2C /* UXMenRequestElementData.m in Sources */ = {isa = PBXBuildFile; fileRef = C33FE13CFAB11A4AFC1B6AE60A7004A8 /* UXMenRequestElementData.m */; };
-		76D386CC4217D057CBD693BC08CEF2F9 /* UXMenRequestStory.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E45B4B2AA1223BE79AB44DC7E5ECFF /* UXMenRequestStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84F1EAB22935609F53C8249506FBB53B /* UXMenTrackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = A222B19A448475FA5A59947C1FB201ED /* UXMenTrackGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AC76F77CC7F2C08AC19E2A08F92EEC7 /* UXMenTouchUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A505F98C5BE8F939B3F0465BB5BF60 /* UXMenTouchUpdateModel.m */; };
-		A23A263A147489C3557CE83B07CA3D1D /* UXMenGestureTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B177AA27D7FFACE258AE87ADDA2184 /* UXMenGestureTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3D363388844A3F17CCA334747AF559C /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2B4016E4063857109327E219A4515F /* UXMenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9A2F8BC060E6A34F1590D2C476BD2FF /* UXMenResponseHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7C92DE9CBA0D1DDE3714D6394FF6FE /* UXMenResponseHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2C57D1E09FDED266C5F1F90767DEE61 /* UXMenRequestHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA8E8E6892888255AA69A65C66A1708 /* UXMenRequestHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8E6C4C2B8AD84BC00834A406EBD22D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CD0CCDE5347889840EB69BD3B30FE753 /* UXMenDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 570255A321FEEA1824CAD42E7B35B6EF /* UXMenDeviceManager.m */; };
-		CEB007770B698BBC940BBB2DFF3D8D62 /* UXMenRequestWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3D6005036CB98E68173B47BDA2DB4 /* UXMenRequestWireFrame.m */; };
-		D29F5937BAAB4C7254FFF12118F0E41D /* UXMenRequestHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 738EF33C722BC6B0DB4B79F283810CA8 /* UXMenRequestHandshake.m */; };
-		D5BB6B3871057311C74E35BB719A6554 /* UXMenRequestWireFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7489BDCB398E809EB57300F5C6F48BB8 /* UXMenRequestWireFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D786F0F53922B2427A9A8188A08CEA9A /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A00744D874E704C45AF34D761E10DC0 /* UXMen-iOS-SDK-dummy.m */; };
-		DD73893E1D156FFA7DA9C03BEC594F61 /* UXMenGestureTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B35ACB3C0DD73124F91D8E190177E2FD /* UXMenGestureTrack.m */; };
-		EDFF60500CCE7892EEEB3B3101A9634D /* UXMenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDB09BF6551E81579547CAD4EC7D3D /* UXMenAPI.m */; };
-		EEA6884EC40D6965B1356FEF914449EE /* UXMenDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DA4B2CA3204E630E086D5DB4B675E3 /* UXMenDeviceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F54238F9A367E07D953FDE2DF1535E95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FD2B18F582FC0ECA928BD762614E9306 /* UXMenTouchUpdateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 412D4C55324DBFA8141CD90885B48561 /* UXMenTouchUpdateModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDE8E0FC16B12404F9434D328A6E6F60 /* UXMenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D60A8F0E3AFC11B31A16E6AC341DEF74 /* UXMenAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE0768EF3D5E40BD1BAC4D2FB92F3786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FF51C09E30546C1FA7142B7BF6FFDC9A /* UXMenRequestStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711B97208DE20DC1696F43963763317 /* UXMenRequestStory.m */; };
+		003B5EE87DBA6917C30C062FA989399E /* UXMenResponseHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313C45551A26135A09123F43DF58A8 /* UXMenResponseHandshake.m */; };
+		00B2EC3BCFA9F4E03293541DA445871A /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */; };
+		0E53401BA93C3BA7DC278CC45FF5D859 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A77B29B235463AC34FDA07A9104F05 /* UXMenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 387C98ABF95705CF81264C1CC867F7A2 /* UXMenSDK.m */; };
+		496607FC97BB9628F3C2B04F287E651C /* UXMenResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5B61399DBFC7DF1B16B7F8C4A9DB3A /* UXMenResponseStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49ECEEDAFEE5A125D366AC14A9AD1830 /* UXMenResponseHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7C92DE9CBA0D1DDE3714D6394FF6FE /* UXMenResponseHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57FCC9A71EB890A2912792703440C1FA /* UXMenTrackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74A64856E1774E156675D21DE53435 /* UXMenTrackGesture.m */; };
+		58A97899B9C961E5C717B339392C0CCB /* UXMenRequestStory.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E45B4B2AA1223BE79AB44DC7E5ECFF /* UXMenRequestStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A51446750BF87426C1DEF783C04C5F4 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		601FE2C40D97A2B3E0A97740C578661B /* UXMenRequestHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA8E8E6892888255AA69A65C66A1708 /* UXMenRequestHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67EE12CB142AA799BF1F8FB1F7569C6F /* UXMenDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DA4B2CA3204E630E086D5DB4B675E3 /* UXMenDeviceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7631B05428500952497C1A503A556A64 /* UXMenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2B4016E4063857109327E219A4515F /* UXMenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		766DD364EB087690DFB8338375B23ECD /* UXMenGestureTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B35ACB3C0DD73124F91D8E190177E2FD /* UXMenGestureTrack.m */; };
+		7E824BEFD08E2097FE6666D65BC5601E /* UXMenRequestStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711B97208DE20DC1696F43963763317 /* UXMenRequestStory.m */; };
+		824A305099ABC4F776FB259CC92ECE91 /* UXMen-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A00744D874E704C45AF34D761E10DC0 /* UXMen-iOS-SDK-dummy.m */; };
+		843B8DD6242E36584880B233384BC22E /* UXMenTouchUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A505F98C5BE8F939B3F0465BB5BF60 /* UXMenTouchUpdateModel.m */; };
+		8B73B53AD1D203591F0D280033001C4F /* UXMenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D60A8F0E3AFC11B31A16E6AC341DEF74 /* UXMenAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96DEF913E7D2D9C8ED18136C66E94B52 /* UXMenRequestElementData.m in Sources */ = {isa = PBXBuildFile; fileRef = C33FE13CFAB11A4AFC1B6AE60A7004A8 /* UXMenRequestElementData.m */; };
+		9CA9FC00B7C2D7439D1B8460BCF44EE8 /* UXMenRequestWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3D6005036CB98E68173B47BDA2DB4 /* UXMenRequestWireFrame.m */; };
+		9F2F4EA385E2D9B1AF3565EACF0DC6C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A522483916FE4242611174161E7795F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A67F8EEE6D615905510AA477732D51BB /* UXMenRequestWireFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7489BDCB398E809EB57300F5C6F48BB8 /* UXMenRequestWireFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD5AFED9E5A6011CABE32850C6097230 /* UXMenDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 570255A321FEEA1824CAD42E7B35B6EF /* UXMenDeviceManager.m */; };
+		BDB5CA7C41736B6B7ACD468986250B92 /* UXMenRequestActionData.h in Headers */ = {isa = PBXBuildFile; fileRef = B283F3775ACF4D97C3C3688544CFCC54 /* UXMenRequestActionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBBA19343C5CF35B0AE01C241F1D65C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C1DE71C3FDEE21848DA002BA528EB46B /* UXMenResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B8460BDD0FA22668FC8532BCB26ED17F /* UXMenResponseStatus.m */; };
+		C4EDAACBE58BC80BF5C43046F90FC789 /* UXMen-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA3331EABA69A6BBF30D2CD88447644 /* UXMen-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBED97F0CE27C28667CE84E53D3A9081 /* UXMenRequestHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 738EF33C722BC6B0DB4B79F283810CA8 /* UXMenRequestHandshake.m */; };
+		CFE2BFC750B6B79045B713753D3CDCF7 /* UXMenGestureTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B177AA27D7FFACE258AE87ADDA2184 /* UXMenGestureTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D824E868ED5006989A3F833193A93C5E /* UXMenRequestActionData.m in Sources */ = {isa = PBXBuildFile; fileRef = D00DD7C9B92069FA6D3345A93E5D5DBA /* UXMenRequestActionData.m */; };
+		DA815BC02666F2C6A5373BA5D2BB73A5 /* UXMenRequestElementData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424253DF147B4493DD57EDA2AC6F57C /* UXMenRequestElementData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E484C61F1ECF358D78FDC0FC48BB2A2D /* UXMenTrackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = A222B19A448475FA5A59947C1FB201ED /* UXMenTrackGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E922B2A8B33B10175E268DEDDED13212 /* UXMenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDB09BF6551E81579547CAD4EC7D3D /* UXMenAPI.m */; };
+		EB2255611D71ABBA36773EC1533EA5FD /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */; };
+		EDCC0B6465839AE6D5492A20A3DDB494 /* UXMenTouchUpdateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 412D4C55324DBFA8141CD90885B48561 /* UXMenTouchUpdateModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		98E5D14AD036620DF647D1A655E2C723 /* PBXContainerItemProxy */ = {
+		8EFFC61811B3BCD01E76833C392F8A66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 07CB366C0D7BE3388F8A0F6A889A845F;
 			remoteInfo = "UXMen-iOS-SDK";
 		};
-		BD0DC4F68396A4FF288AC03E58215035 /* PBXContainerItemProxy */ = {
+		B5A1B69E72852C3E1B54C322547DD69F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -65,7 +65,7 @@
 		00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		07A6290A719C6E59AEE85ACDD06C9A37 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0BA3331EABA69A6BBF30D2CD88447644 /* UXMen-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
-		0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Tests.framework; path = "Pods-UXMen-iOS-SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13571547BDE49D0308B67AE7BA07255D /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Tests.framework; path = "Pods-UXMen-iOS-SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B177AA27D7FFACE258AE87ADDA2184 /* UXMenGestureTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenGestureTrack.h; sourceTree = "<group>"; };
 		1E5B61399DBFC7DF1B16B7F8C4A9DB3A /* UXMenResponseStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseStatus.h; sourceTree = "<group>"; };
 		2711B97208DE20DC1696F43963763317 /* UXMenRequestStory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestStory.m; sourceTree = "<group>"; };
@@ -82,11 +82,12 @@
 		412D4C55324DBFA8141CD90885B48561 /* UXMenTouchUpdateModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenTouchUpdateModel.h; sourceTree = "<group>"; };
 		422932CA025E19FD84BB44071BD35953 /* Pods-UXMen-iOS-SDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		440CE45AC6C3D4D11B3A78651A47081A /* Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		44CAE354BF9D207C05DCE1DA285BF8CE /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UXMen_iOS_SDK.framework; path = "UXMen-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA8E8E6892888255AA69A65C66A1708 /* UXMenRequestHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestHandshake.h; sourceTree = "<group>"; };
-		518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UXMen_iOS_SDK.framework; path = "UXMen-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		52A505F98C5BE8F939B3F0465BB5BF60 /* UXMenTouchUpdateModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenTouchUpdateModel.m; sourceTree = "<group>"; };
 		570255A321FEEA1824CAD42E7B35B6EF /* UXMenDeviceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenDeviceManager.m; sourceTree = "<group>"; };
+		5885280DEFA428204FBD893D0DA70B96 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Example.framework; path = "Pods-UXMen-iOS-SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACDB09BF6551E81579547CAD4EC7D3D /* UXMenAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UXMenAPI.m; path = "UXMen-iOS-SDK/Classes/UXMenAPI.m"; sourceTree = "<group>"; };
 		5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Example-dummy.m"; sourceTree = "<group>"; };
 		65313C45551A26135A09123F43DF58A8 /* UXMenResponseHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseHandshake.m; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		880A50053A1512D8B3739394EEBCA3FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UXMen-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		9424253DF147B4493DD57EDA2AC6F57C /* UXMenRequestElementData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestElementData.h; sourceTree = "<group>"; };
-		96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Example.framework; path = "Pods-UXMen-iOS-SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A222B19A448475FA5A59947C1FB201ED /* UXMenTrackGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenTrackGesture.h; sourceTree = "<group>"; };
 		A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,27 +122,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E7B5F45C11F20AE71ED5E26431092E2 /* Frameworks */ = {
+		1203DEB6E299E3A49CABC270FFEDF242 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E6C4C2B8AD84BC00834A406EBD22D0 /* Foundation.framework in Frameworks */,
+				A522483916FE4242611174161E7795F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73EB563B178A1738AFF5506E29896844 /* Frameworks */ = {
+		21D5D062D3CF762A01EF5EF45B860BF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0768EF3D5E40BD1BAC4D2FB92F3786 /* Foundation.framework in Frameworks */,
+				9F2F4EA385E2D9B1AF3565EACF0DC6C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5688094F9F5DC51707301C448FF65E /* Frameworks */ = {
+		728216CFCB2B76B0B4D02592E54DE371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54238F9A367E07D953FDE2DF1535E95 /* Foundation.framework in Frameworks */,
+				BFBBA19343C5CF35B0AE01C241F1D65C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +220,9 @@
 		54DFC537D0EF91B409E9E9E8DAA9B6F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */,
-				0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */,
-				518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */,
+				5885280DEFA428204FBD893D0DA70B96 /* Pods_UXMen_iOS_SDK_Example.framework */,
+				13571547BDE49D0308B67AE7BA07255D /* Pods_UXMen_iOS_SDK_Tests.framework */,
+				44CAE354BF9D207C05DCE1DA285BF8CE /* UXMen_iOS_SDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,40 +335,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20218B92086350B6D9AC091355A0AEEE /* Headers */ = {
+		4CF03C5DB3353D7BB3E083BB9DAAF7AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA6109BDA40A8CA689237D85AC5B60A /* UXMen-iOS-SDK-umbrella.h in Headers */,
-				FDE8E0FC16B12404F9434D328A6E6F60 /* UXMenAPI.h in Headers */,
-				EEA6884EC40D6965B1356FEF914449EE /* UXMenDeviceManager.h in Headers */,
-				A23A263A147489C3557CE83B07CA3D1D /* UXMenGestureTrack.h in Headers */,
-				5184574CA8B704B473EC90D3F03CE378 /* UXMenRequestActionData.h in Headers */,
-				3058DF72C50F59BD29D92ADFAE1766E7 /* UXMenRequestElementData.h in Headers */,
-				C2C57D1E09FDED266C5F1F90767DEE61 /* UXMenRequestHandshake.h in Headers */,
-				76D386CC4217D057CBD693BC08CEF2F9 /* UXMenRequestStory.h in Headers */,
-				D5BB6B3871057311C74E35BB719A6554 /* UXMenRequestWireFrame.h in Headers */,
-				B9A2F8BC060E6A34F1590D2C476BD2FF /* UXMenResponseHandshake.h in Headers */,
-				50B3BDCFD64F0C570F25E26E960D8978 /* UXMenResponseStatus.h in Headers */,
-				B3D363388844A3F17CCA334747AF559C /* UXMenSDK.h in Headers */,
-				FD2B18F582FC0ECA928BD762614E9306 /* UXMenTouchUpdateModel.h in Headers */,
-				84F1EAB22935609F53C8249506FBB53B /* UXMenTrackGesture.h in Headers */,
+				5A51446750BF87426C1DEF783C04C5F4 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC85D03F240289C116372A9EFA616E02 /* Headers */ = {
+		7896FD85F0113384CF346E518EEED307 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8175924C74CE96D50CE9E41C34FD6AB7 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h in Headers */,
+				C4EDAACBE58BC80BF5C43046F90FC789 /* UXMen-iOS-SDK-umbrella.h in Headers */,
+				8B73B53AD1D203591F0D280033001C4F /* UXMenAPI.h in Headers */,
+				67EE12CB142AA799BF1F8FB1F7569C6F /* UXMenDeviceManager.h in Headers */,
+				CFE2BFC750B6B79045B713753D3CDCF7 /* UXMenGestureTrack.h in Headers */,
+				BDB5CA7C41736B6B7ACD468986250B92 /* UXMenRequestActionData.h in Headers */,
+				DA815BC02666F2C6A5373BA5D2BB73A5 /* UXMenRequestElementData.h in Headers */,
+				601FE2C40D97A2B3E0A97740C578661B /* UXMenRequestHandshake.h in Headers */,
+				58A97899B9C961E5C717B339392C0CCB /* UXMenRequestStory.h in Headers */,
+				A67F8EEE6D615905510AA477732D51BB /* UXMenRequestWireFrame.h in Headers */,
+				49ECEEDAFEE5A125D366AC14A9AD1830 /* UXMenResponseHandshake.h in Headers */,
+				496607FC97BB9628F3C2B04F287E651C /* UXMenResponseStatus.h in Headers */,
+				7631B05428500952497C1A503A556A64 /* UXMenSDK.h in Headers */,
+				EDCC0B6465839AE6D5492A20A3DDB494 /* UXMenTouchUpdateModel.h in Headers */,
+				E484C61F1ECF358D78FDC0FC48BB2A2D /* UXMenTrackGesture.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFF29D6110FA4CCE9DCB2F30B3A77356 /* Headers */ = {
+		FF36D2700BF60FAC1776A8DEC9AFB355 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36B5BB89642260CA82535D126937D9A8 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */,
+				0E53401BA93C3BA7DC278CC45FF5D859 /* Pods-UXMen-iOS-SDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +377,12 @@
 /* Begin PBXNativeTarget section */
 		07CB366C0D7BE3388F8A0F6A889A845F /* UXMen-iOS-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E68B5A3988D61047D7D563748C667C8B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
+			buildConfigurationList = 3D31B7318B93FA1FA1419711EE79F524 /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */;
 			buildPhases = (
-				20218B92086350B6D9AC091355A0AEEE /* Headers */,
-				BF5D9116B32A3B823944312B6FD6A919 /* Sources */,
-				FB5688094F9F5DC51707301C448FF65E /* Frameworks */,
-				A3A07F0C054D6AC3E9606119470F7F9E /* Resources */,
+				7896FD85F0113384CF346E518EEED307 /* Headers */,
+				E989D72200DDCC4B322A4E084101C3ED /* Sources */,
+				21D5D062D3CF762A01EF5EF45B860BF8 /* Frameworks */,
+				3A0C37F843D3DBFB3024ACFD03919202 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -390,45 +390,45 @@
 			);
 			name = "UXMen-iOS-SDK";
 			productName = "UXMen-iOS-SDK";
-			productReference = 518C3401DBA4C9FD89679A645EEA1E9C /* UXMen_iOS_SDK.framework */;
+			productReference = 44CAE354BF9D207C05DCE1DA285BF8CE /* UXMen_iOS_SDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7C0C36BC45225C4AD44B4DB956E49DCE /* Pods-UXMen-iOS-SDK_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9292ACD5175786560A83C5EC1A271DDE /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Tests" */;
+			buildConfigurationList = 48CC92D78A30D204F54CB95FC3330834 /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Tests" */;
 			buildPhases = (
-				AC85D03F240289C116372A9EFA616E02 /* Headers */,
-				1F287A0516108D524BBE271FA10D3F58 /* Sources */,
-				73EB563B178A1738AFF5506E29896844 /* Frameworks */,
-				B122A0D66AD58089B187DE7C8D9C33A8 /* Resources */,
+				4CF03C5DB3353D7BB3E083BB9DAAF7AE /* Headers */,
+				F71914242D2AF9A2D0D046869D969D47 /* Sources */,
+				728216CFCB2B76B0B4D02592E54DE371 /* Frameworks */,
+				C35409128C518574AB1F8EFB7EB83670 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA680BBDED8525BCEC076EECFEF6F3B3 /* PBXTargetDependency */,
+				EDEC0389A29E5699F38C9810A1761827 /* PBXTargetDependency */,
 			);
 			name = "Pods-UXMen-iOS-SDK_Tests";
 			productName = "Pods-UXMen-iOS-SDK_Tests";
-			productReference = 0BBFE86725A57C6D0EBF0B94AFA7694B /* Pods_UXMen_iOS_SDK_Tests.framework */;
+			productReference = 13571547BDE49D0308B67AE7BA07255D /* Pods_UXMen_iOS_SDK_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		879F5CAC7ADE90F55DCC6BCB4F5D9852 /* Pods-UXMen-iOS-SDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 512483BE13D7580B003EF7ACF6CFEAE2 /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Example" */;
+			buildConfigurationList = 8940831A44E08F5E829BFD25E429231E /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Example" */;
 			buildPhases = (
-				EFF29D6110FA4CCE9DCB2F30B3A77356 /* Headers */,
-				B4ABA7161FA1372B08A22162E2EC4D92 /* Sources */,
-				4E7B5F45C11F20AE71ED5E26431092E2 /* Frameworks */,
-				5A4642655DDAB9D507C46287CA169E8B /* Resources */,
+				FF36D2700BF60FAC1776A8DEC9AFB355 /* Headers */,
+				112BB6D9D7E21455B33EF72699921805 /* Sources */,
+				1203DEB6E299E3A49CABC270FFEDF242 /* Frameworks */,
+				9CFE02E8033CA966B12B53761C9E2A3D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				13BF109C9E0BD6498CD931D6ADC812BE /* PBXTargetDependency */,
+				74B9B71C160762CED51A8042751B11FC /* PBXTargetDependency */,
 			);
 			name = "Pods-UXMen-iOS-SDK_Example";
 			productName = "Pods-UXMen-iOS-SDK_Example";
-			productReference = 96705A6AD5D1D5587E670789840E3FB1 /* Pods_UXMen_iOS_SDK_Example.framework */;
+			productReference = 5885280DEFA428204FBD893D0DA70B96 /* Pods_UXMen_iOS_SDK_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -437,8 +437,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -446,6 +446,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 54DFC537D0EF91B409E9E9E8DAA9B6F5 /* Products */;
@@ -460,21 +461,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5A4642655DDAB9D507C46287CA169E8B /* Resources */ = {
+		3A0C37F843D3DBFB3024ACFD03919202 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3A07F0C054D6AC3E9606119470F7F9E /* Resources */ = {
+		9CFE02E8033CA966B12B53761C9E2A3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B122A0D66AD58089B187DE7C8D9C33A8 /* Resources */ = {
+		C35409128C518574AB1F8EFB7EB83670 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -484,62 +485,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F287A0516108D524BBE271FA10D3F58 /* Sources */ = {
+		112BB6D9D7E21455B33EF72699921805 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E4C64E18DE11A8155BC8811BC4116B6 /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */,
+				EB2255611D71ABBA36773EC1533EA5FD /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4ABA7161FA1372B08A22162E2EC4D92 /* Sources */ = {
+		E989D72200DDCC4B322A4E084101C3ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491F9CCF779DBD221FBB1D5338038443 /* Pods-UXMen-iOS-SDK_Example-dummy.m in Sources */,
+				824A305099ABC4F776FB259CC92ECE91 /* UXMen-iOS-SDK-dummy.m in Sources */,
+				E922B2A8B33B10175E268DEDDED13212 /* UXMenAPI.m in Sources */,
+				BD5AFED9E5A6011CABE32850C6097230 /* UXMenDeviceManager.m in Sources */,
+				766DD364EB087690DFB8338375B23ECD /* UXMenGestureTrack.m in Sources */,
+				D824E868ED5006989A3F833193A93C5E /* UXMenRequestActionData.m in Sources */,
+				96DEF913E7D2D9C8ED18136C66E94B52 /* UXMenRequestElementData.m in Sources */,
+				CBED97F0CE27C28667CE84E53D3A9081 /* UXMenRequestHandshake.m in Sources */,
+				7E824BEFD08E2097FE6666D65BC5601E /* UXMenRequestStory.m in Sources */,
+				9CA9FC00B7C2D7439D1B8460BCF44EE8 /* UXMenRequestWireFrame.m in Sources */,
+				003B5EE87DBA6917C30C062FA989399E /* UXMenResponseHandshake.m in Sources */,
+				C1DE71C3FDEE21848DA002BA528EB46B /* UXMenResponseStatus.m in Sources */,
+				47A77B29B235463AC34FDA07A9104F05 /* UXMenSDK.m in Sources */,
+				843B8DD6242E36584880B233384BC22E /* UXMenTouchUpdateModel.m in Sources */,
+				57FCC9A71EB890A2912792703440C1FA /* UXMenTrackGesture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF5D9116B32A3B823944312B6FD6A919 /* Sources */ = {
+		F71914242D2AF9A2D0D046869D969D47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D786F0F53922B2427A9A8188A08CEA9A /* UXMen-iOS-SDK-dummy.m in Sources */,
-				EDFF60500CCE7892EEEB3B3101A9634D /* UXMenAPI.m in Sources */,
-				CD0CCDE5347889840EB69BD3B30FE753 /* UXMenDeviceManager.m in Sources */,
-				DD73893E1D156FFA7DA9C03BEC594F61 /* UXMenGestureTrack.m in Sources */,
-				28BBD76A9737BB10F205AC493EE9367D /* UXMenRequestActionData.m in Sources */,
-				727483A9F7037C69749970FF4475CB2C /* UXMenRequestElementData.m in Sources */,
-				D29F5937BAAB4C7254FFF12118F0E41D /* UXMenRequestHandshake.m in Sources */,
-				FF51C09E30546C1FA7142B7BF6FFDC9A /* UXMenRequestStory.m in Sources */,
-				CEB007770B698BBC940BBB2DFF3D8D62 /* UXMenRequestWireFrame.m in Sources */,
-				44C8D425EC2904D77FCD70255CF4B592 /* UXMenResponseHandshake.m in Sources */,
-				6ABE3DA10252A6162FBDB997876EDD77 /* UXMenResponseStatus.m in Sources */,
-				14DF2327B2A8980FCEE035AA4C5A4C50 /* UXMenSDK.m in Sources */,
-				9AC76F77CC7F2C08AC19E2A08F92EEC7 /* UXMenTouchUpdateModel.m in Sources */,
-				2A91CCDDB07CF8CB6AD3E62DF1D71DF9 /* UXMenTrackGesture.m in Sources */,
+				00B2EC3BCFA9F4E03293541DA445871A /* Pods-UXMen-iOS-SDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		13BF109C9E0BD6498CD931D6ADC812BE /* PBXTargetDependency */ = {
+		74B9B71C160762CED51A8042751B11FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UXMen-iOS-SDK";
 			target = 07CB366C0D7BE3388F8A0F6A889A845F /* UXMen-iOS-SDK */;
-			targetProxy = 98E5D14AD036620DF647D1A655E2C723 /* PBXContainerItemProxy */;
+			targetProxy = 8EFFC61811B3BCD01E76833C392F8A66 /* PBXContainerItemProxy */;
 		};
-		BA680BBDED8525BCEC076EECFEF6F3B3 /* PBXTargetDependency */ = {
+		EDEC0389A29E5699F38C9810A1761827 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-UXMen-iOS-SDK_Example";
 			target = 879F5CAC7ADE90F55DCC6BCB4F5D9852 /* Pods-UXMen-iOS-SDK_Example */;
-			targetProxy = BD0DC4F68396A4FF288AC03E58215035 /* PBXContainerItemProxy */;
+			targetProxy = B5A1B69E72852C3E1B54C322547DD69F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2F5992EAB2865B57A44ECB869AC18ECB /* Debug */ = {
+		0C180DEB4DE2626DE43CF39724DA503A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -572,9 +573,9 @@
 			};
 			name = Debug;
 		};
-		3CE00A93A3D0D4DBCC12603AE1FF62D8 /* Release */ = {
+		1E21EADA8BBBEC61023B8F0290C1F65C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 819E76989484A49786606F5E55C1EA06 /* Pods-UXMen-iOS-SDK_Example.release.xcconfig */;
+			baseConfigurationReference = 3A799C3CE3BFD9CA5705BFE633FD2C29 /* Pods-UXMen-iOS-SDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -592,6 +593,70 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		210ABA8611A8476A96CBC36FD5BFCE00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
+				PRODUCT_NAME = UXMen_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E947191FF99F51E4EAD368F985B6A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -666,11 +731,10 @@
 			};
 			name = Release;
 		};
-		6500C426CBDD58768B3CA016C2D899BC /* Debug */ = {
+		650AC839F4D23325F599C0D6D37FFCC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A799C3CE3BFD9CA5705BFE633FD2C29 /* Pods-UXMen-iOS-SDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -680,24 +744,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
+				PRODUCT_NAME = UXMen_iOS_SDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -763,40 +827,9 @@
 			};
 			name = Debug;
 		};
-		AC07201169CF86ADD52DEFBE21426023 /* Debug */ = {
+		9115827BF80145B91294D61A7D562B0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
-				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
-				PRODUCT_NAME = UXMen_iOS_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BA0B7DF83EBBD09F147F42C3E39675EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */;
+			baseConfigurationReference = 819E76989484A49786606F5E55C1EA06 /* Pods-UXMen-iOS-SDK_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -808,12 +841,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -828,41 +861,18 @@
 			};
 			name = Release;
 		};
-		C19DF1B551A9212B4A30DFB1C3C236CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.modulemap";
-				PRODUCT_MODULE_NAME = UXMen_iOS_SDK;
-				PRODUCT_NAME = UXMen_iOS_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D31B7318B93FA1FA1419711EE79F524 /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210ABA8611A8476A96CBC36FD5BFCE00 /* Debug */,
+				650AC839F4D23325F599C0D6D37FFCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -872,29 +882,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		512483BE13D7580B003EF7ACF6CFEAE2 /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Example" */ = {
+		48CC92D78A30D204F54CB95FC3330834 /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6500C426CBDD58768B3CA016C2D899BC /* Debug */,
-				3CE00A93A3D0D4DBCC12603AE1FF62D8 /* Release */,
+				0C180DEB4DE2626DE43CF39724DA503A /* Debug */,
+				2E947191FF99F51E4EAD368F985B6A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9292ACD5175786560A83C5EC1A271DDE /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Tests" */ = {
+		8940831A44E08F5E829BFD25E429231E /* Build configuration list for PBXNativeTarget "Pods-UXMen-iOS-SDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F5992EAB2865B57A44ECB869AC18ECB /* Debug */,
-				BA0B7DF83EBBD09F147F42C3E39675EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E68B5A3988D61047D7D563748C667C8B /* Build configuration list for PBXNativeTarget "UXMen-iOS-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC07201169CF86ADD52DEFBE21426023 /* Debug */,
-				C19DF1B551A9212B4A30DFB1C3C236CC /* Release */,
+				1E21EADA8BBBEC61023B8F0290C1F65C /* Debug */,
+				9115827BF80145B91294D61A7D562B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

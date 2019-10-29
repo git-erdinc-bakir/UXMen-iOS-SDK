@@ -86,31 +86,36 @@
 
     UXMenTouchUpdateModel *modelTouch = [UXMenTouchUpdateModel new];
     modelTouch.weight = @1;
+
+    NSDate *currentDate = [NSDate date];
+    double timestamp = [currentDate timeIntervalSince1970];
+    modelTouch.timestamp = timestamp;
+
     modelTouch.touchLocation = [NSValue valueWithCGPoint:CGPointMake(loc.x, loc.y)];
-    
+
     UIViewController *topViewController = [UIViewController new];
     topViewController.view = [UIView new];
-    
+
     if ([self.window.rootViewController isKindOfClass:[UINavigationController class]]) {
         //        NSLog(@"getViewComponents UINavigationController class");
         UINavigationController *controller = (UINavigationController *) self.window.rootViewController;
         topViewController = [[controller viewControllers] lastObject];
-        
+
     } else if ([self.window.rootViewController isKindOfClass:[UIViewController class]]) {
         //        NSLog(@"getViewComponents UIViewController class");
         topViewController = self.window.rootViewController;
-        
+
     } else {
         NSLog(@"getViewComponents class");
-        NSLog(@"%@", [NSString stringWithFormat:@"%@", [self.window.rootViewController class] ]);
-        
+        NSLog(@"%@", [NSString stringWithFormat:@"%@", [self.window.rootViewController class]]);
+
     }
     modelTouch.pageName = NSStringFromClass([topViewController class]);
-    
+
     [_arrayTouches addObject:modelTouch];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"UXMenTouchNotification" object:self];
-    
+
     // NSValue *val = modelTouch.touchLocation;
     // CGPoint p = [val CGPointValue];
     // NSLog(@"TIKLANAN KOORDİNAT X:%f Y:%f", p.x, p.y);

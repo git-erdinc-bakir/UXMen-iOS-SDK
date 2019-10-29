@@ -2,167 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="becca597-7388-4ce4-a77b-6cc2514a1fb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-umbrella.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-umbrella.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UXMen-iOS-SDK/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/UXMen-iOS-SDK/AppDelegate.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Example/Pods-UXMen-iOS-SDK_Example.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UXMen-iOS-SDK/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/UXMen-iOS-SDK/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UXMen-iOS-SDK/UXMViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/UXMen-iOS-SDK/UXMViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenResponseStatus.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenResponseStatus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.m" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTrackGesture.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTrackGesture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.h" afterDir="false" />
     </list>
-    <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/UXMen-iOS-SDK-fgkwqmshewgprhgzabsijfrjtvoh/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0EEBBBA9-003E-4546-B79E-6109CD98AB87" />
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>0.1.2</find>
-      <find>192.168</find>
-      <find>UXMenRequestActionStory</find>
-      <find>UXMenRequestActionBulk</find>
-      <find>UXMenRequestDeviceData</find>
-      <find>parseWireFrameAndSendToServer</find>
-      <find>i</find>
-      <find>arrayPoints</find>
-      <find>arrayLocations</find>
-      <find>resetTouchRecords</find>
-      <find>timerCalled</find>
-      <find>sendStory</find>
-      <find>0.1.3</find>
-      <find>0.1.4</find>
-      <find>0.1.5</find>
-      <find>getViewComponents</find>
-      <find>viewControllers</find>
-      <find>window</find>
-      <find>gettouchwe</find>
-      <find>setUxmenTouchDelegate</find>
-      <find>xmenTouchDelegate</find>
-      <find>UXMenAPIDelegate</find>
-      <find>@protocol</find>
-      <find>UXMenGestureDelegate</find>
-      <find>forTouchesBegan</find>
-      <find>touchDelegate</find>
-      <find>TouchDelegate</find>
-      <find>touchGesture</find>
-      <find>UXMenTrackGesture</find>
-      <find>UXMenGestureTrack</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>UXMenRequestActionStory</replace>
-      <replace>UXMenRequestHandshake</replace>
-    </replaceStrings>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/../UXMenTrackGesture.m" />
-        <option value="$PROJECT_DIR$/../UXMenGestureTrack.h" />
-        <option value="$PROJECT_DIR$/../UXMenGestureTrack.m" />
-        <option value="$PROJECT_DIR$/../UXMenTrackGesture.h" />
-        <option value="$PROJECT_DIR$/../UXMenDeviceManager.h" />
-        <option value="$PROJECT_DIR$/../UXMenAPI.m" />
-        <option value="$PROJECT_DIR$/UXMen-iOS-SDK/UXMViewController.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestWireFrame.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestActionStory.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestActionWireframe.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestHandshake.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestScreenData.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionData.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionData.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionStory.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestStory.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestWireFrame.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestStory.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK.podspec" />
-        <option value="$PROJECT_DIR$/Pods/Target Support Files/UXMen-iOS-SDK/UXMen-iOS-SDK-Info.plist" />
-        <option value="$PROJECT_DIR$/Podfile.lock" />
-        <option value="$PROJECT_DIR$/Pods/Manifest.lock" />
-        <option value="$PROJECT_DIR$/Pods/Local Podspecs/UXMen-iOS-SDK.podspec.json" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTrackGesture.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.m" />
-        <option value="$PROJECT_DIR$/UXMen-iOS-SDK/AppDelegate.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.h" />
-        <option value="$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.h" />
-      </list>
-    </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="OCResolveContextSettings">
     <option name="configuration" value="C19DF1B551A9212B4A30DFB1C3C236CC-Simulator - iOS 12.4 (iphonesimulator12.4 12.4)-x86_64" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-157" />
-    <option name="width" value="1920" />
-    <option name="height" value="978" />
-  </component>
+  <component name="ProjectId" id="1SsVKEt0seJCEVc64W6yjSgEAub" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-              <item name="Development Pods" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-              <item name="Development Pods" type="fcab9f18:XcodeViewNode" />
-              <item name="UXMen-iOS-SDK" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-              <item name="Development Pods" type="fcab9f18:XcodeViewNode" />
-              <item name="UXMen-iOS-SDK" type="fcab9f18:XcodeViewNode" />
-              <item name="UXMenLogic" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="UXMen-iOS-SDK" type="1d218c8b:XcodeProjectNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="UXMen-iOS-SDK" type="1d218c8b:XcodeProjectNode" />
-              <item name="Example for UXMen-iOS-SDK" type="fcab9f18:XcodeViewNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Cidr.FilesView" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="UXMen-iOS-SDK" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -198,325 +71,25 @@
       <workItem from="1563293730339" duration="16000" />
       <workItem from="1563293758415" duration="7812000" />
       <workItem from="1566767274688" duration="3871000" />
+      <workItem from="1572352226840" duration="3160000" />
+      <workItem from="1572356725984" duration="397000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12269000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1440" y="-157" width="1920" height="978" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22204472" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.21106094" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946752" weight="0.32953367" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.3284974" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946752" weight="0.33069977" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>435</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>418</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>161</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>308</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>190</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>186</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>120</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>152</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m</url>
-          <line>297</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../UXMenDeviceManager.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMenRequestActionBulk.h" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="301" column="10" selection-start-line="301" selection-start-column="10" selection-end-line="301" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMenAPI.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMenAPI.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/ReplaceMe.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenDeviceManager.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenGestureTrack.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenTrackGesture.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestHandshake.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestActionWireframe.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestWireFrame.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestWireFrame.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestScreenData.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestActionStory.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenRequestHandshake.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenResponseHandshake.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenResponseStatus.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestScreenData.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenHandshake/UXMenRequestHandshake.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenHandshake/UXMenResponseHandshake.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenHandshake/UXMenResponseHandshake.m">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenResponseStatus.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionData.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestStory.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionWireframe.m" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestActionWireframe.h" />
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestStory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestWireFrame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenApiModels/UXMenStory/UXMenRequestElementData.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UXMen-iOS-SDK/UXMViewController.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIWindow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UXMen-iOS-SDK/UXMViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#161#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UXMen-iOS-SDK/AppDelegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UXMen-iOS-SDK/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UXMen-iOS-SDK/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#155#189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenSDK.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenSDK.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="e#154#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#97#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTrackGesture.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenAPI.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#96#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenGestureTrack.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#154#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenDeviceManager.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenDeviceManager.m">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTouchUpdateModel.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../UXMen-iOS-SDK/Classes/UXMenLogic/UXMenTrackGesture.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

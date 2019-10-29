@@ -8,12 +8,17 @@
 
 @interface UXMenRequestElementData : NSObject
 
-@property(nonatomic, copy) NSString *type;
-
 @property(nonatomic) double posX;
 @property(nonatomic) double posY;
 
 @property(nonatomic) double objWidth;
 @property(nonatomic) double objHeight;
+
+@property(nonatomic, copy) NSString *parent;
+@property(nonatomic, copy) NSString *viewIdentifier;
+
+@property(nonatomic, copy) NSString *type;
+@property(nonatomic, copy) NSString *text;
+@property(nonatomic, copy) NSString *btnAction;
 
 @end
