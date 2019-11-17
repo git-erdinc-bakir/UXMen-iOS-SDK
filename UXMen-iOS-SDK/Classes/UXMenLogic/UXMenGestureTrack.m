@@ -100,11 +100,29 @@
         //        NSLog(@"getViewComponents UINavigationController class");
         UINavigationController *controller = (UINavigationController *) self.window.rootViewController;
         topViewController = [[controller viewControllers] lastObject];
-
+        
+        if (topViewController.presentedViewController != nil){
+            if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
+                UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
+                topViewController = [[navigationController viewControllers] lastObject];
+            }
+            
+            topViewController = (UIViewController *)topViewController.presentedViewController;
+            
+        }
     } else if ([self.window.rootViewController isKindOfClass:[UIViewController class]]) {
         //        NSLog(@"getViewComponents UIViewController class");
         topViewController = self.window.rootViewController;
-
+        
+        if (topViewController.presentedViewController != nil){
+            if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
+                UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
+                topViewController = [[navigationController viewControllers] lastObject];
+            }
+            
+            topViewController = (UIViewController *)topViewController.presentedViewController;
+            
+        }
     } else {
         NSLog(@"getViewComponents class");
         NSLog(@"%@", [NSString stringWithFormat:@"%@", [self.window.rootViewController class]]);
@@ -177,7 +195,7 @@
         [self.superview addSubview:self];
     }
     for (UITouch *t in touches) {
-        [self updateTouch:t];
+        // [self updateTouch:t];
     }
 }
 
@@ -185,7 +203,7 @@
     NSLog(@"forTouchesMoved");
 
     for (UITouch *t in touches) {
-        [self updateTouch:t];
+        // [self updateTouch:t];
     }
 }
 
@@ -193,6 +211,7 @@
     NSLog(@"forTouchesEnded");
 
     for (UITouch *t in touches) {
+        [self updateTouch:t];
         [self removeViewFor:t];
     }
 }

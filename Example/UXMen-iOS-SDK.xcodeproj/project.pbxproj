@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176752D82381782600056A6D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752D72381782600056A6D /* ListViewController.m */; };
+		176752DB23817A1F00056A6D /* UXMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752DA23817A1F00056A6D /* UXMTableCell.m */; };
+		176752DE2381987700056A6D /* UXMScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752DD2381987700056A6D /* UXMScrollViewController.m */; };
 		1798A80422DE734500446DB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1798A80222DE734500446DB7 /* SecondViewController.m */; };
 		17A5108022D21C2F00A182FB /* UXMen_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */; };
 		56593FC003F7E2C63D08C0AF /* Pods_UXMen_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74435CFA36B9195DD162610F /* Pods_UXMen_iOS_SDK_Tests.framework */; };
@@ -40,6 +43,12 @@
 
 /* Begin PBXFileReference section */
 		10C57EEA348115EC7E86EC8A /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-UXMen-iOS-SDK_Tests/Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		176752D62381782600056A6D /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		176752D72381782600056A6D /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		176752D923817A1F00056A6D /* UXMTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXMTableCell.h; sourceTree = "<group>"; };
+		176752DA23817A1F00056A6D /* UXMTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMTableCell.m; sourceTree = "<group>"; };
+		176752DC2381987700056A6D /* UXMScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXMScrollViewController.h; sourceTree = "<group>"; };
+		176752DD2381987700056A6D /* UXMScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMScrollViewController.m; sourceTree = "<group>"; };
 		1798A80222DE734500446DB7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1798A80322DE734500446DB7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UXMen_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +169,12 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				6003F5A5195388D20070C39A /* UXMViewController.h */,
 				6003F5A6195388D20070C39A /* UXMViewController.m */,
+				176752D62381782600056A6D /* ListViewController.h */,
+				176752D72381782600056A6D /* ListViewController.m */,
+				176752D923817A1F00056A6D /* UXMTableCell.h */,
+				176752DA23817A1F00056A6D /* UXMTableCell.m */,
+				176752DC2381987700056A6D /* UXMScrollViewController.h */,
+				176752DD2381987700056A6D /* UXMScrollViewController.m */,
 			);
 			name = "Example for UXMen-iOS-SDK";
 			path = "UXMen-iOS-SDK";
@@ -373,10 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176752D82381782600056A6D /* ListViewController.m in Sources */,
 				1798A80422DE734500446DB7 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				176752DE2381987700056A6D /* UXMScrollViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* UXMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				176752DB23817A1F00056A6D /* UXMTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

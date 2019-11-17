@@ -14,6 +14,9 @@
 @property(nonatomic) double objWidth;
 @property(nonatomic) double objHeight;
 
+// FOR LIST AND SCROLLS
+@property(nonatomic) double contentOffsetY;
+
 @property(nonatomic, copy) NSString *parent;
 @property(nonatomic, copy) NSString *viewIdentifier;
 

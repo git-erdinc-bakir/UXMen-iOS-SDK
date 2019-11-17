@@ -98,7 +98,7 @@ static UXMenAPI *uxmenShared = nil;
     requestDeviceData.ratio = [UIScreen mainScreen].scale;
 
     [self handshake:requestDeviceData];
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleTouchUpdate:)
                                                  name:@"UXMenTouchNotification"
@@ -134,44 +134,43 @@ static UXMenAPI *uxmenShared = nil;
     [request setHTTPBody:postData];
 
     NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
-                                                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                    if (error) {
-                                                        NSLog(@"%@", error);
-
-                                                        NSLog(@"returnWithUXMenApiError");
-                                                        // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
-
-                                                    } else {
-                                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                                                        NSLog(@"%@", httpResponse);
-
-                                                        // Parse the JSON response
-                                                        NSError *jsonError;
-                                                        NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
-                                                                                                                     options:nil
-                                                                                                                       error:&jsonError];
-                                                        if (jsonError) {
-//                                                            [NSException raise:@"Exception on parsing JSON data"
-//                                                                        format:@"%@", jsonError.localizedDescription];
-
-                                                            NSLog(@"returnWithUXMenApiError");
-                                                            // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
-                                                            return;
-                                                        }
-
-                                                        self->handshakeResponse = [UXMenResponseHandshake new];
-                                                        self->handshakeResponse.status = [jsonResponse[@"status"] intValue];
-                                                        self->handshakeResponse.result = [jsonResponse[@"result"] stringValue];
-
-                                                        self->apiSessionId = self->handshakeResponse.result;
-
-                                                        [self initScreen];
-
-                                                        // [self.delegate returnWithUXMenHandshake:handshakeResponse];
-
-                                                    }
-                                                }];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+            
+            NSLog(@"returnWithUXMenApiError");
+            // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
+            
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            NSLog(@"%@", httpResponse);
+            
+            // Parse the JSON response
+            NSError *jsonError;
+            NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:nil
+                                                                           error:&jsonError];
+            if (jsonError) {
+                //[NSException raise:@"Exception on parsing JSON data"
+                //             format:@"%@", jsonError.localizedDescription];
+                
+                NSLog(@"returnWithUXMenApiError");
+                // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
+                return;
+            }
+            
+            self->handshakeResponse = [UXMenResponseHandshake new];
+            self->handshakeResponse.status = [jsonResponse[@"status"] intValue];
+            self->handshakeResponse.result = [jsonResponse[@"result"] stringValue];
+            
+            self->apiSessionId = self->handshakeResponse.result;
+            
+            [self initScreen];
+            
+            // [self.delegate returnWithUXMenHandshake:handshakeResponse];
+            
+        }
+    }];
     [dataTask resume];
 
 }
@@ -200,6 +199,8 @@ static UXMenAPI *uxmenShared = nil;
 
             dictElement[@"objWidth"] = @(screenData.objWidth);
             dictElement[@"objHeight"] = @(screenData.objHeight);
+            
+            dictElement[@"contentOffsetY"] = @(screenData.contentOffsetY);
 
             dictElement[@"parent"] = screenData.parent;
             dictElement[@"viewIdentifier"] = screenData.viewIdentifier;
@@ -231,18 +232,34 @@ static UXMenAPI *uxmenShared = nil;
     topViewController.view = [UIView new];
 
     if ([self->delegate.window.rootViewController isKindOfClass:[UINavigationController class]]) {
-        //        NSLog(@"getViewComponents UINavigationController class");
         UINavigationController *controller = (UINavigationController *) self->delegate.window.rootViewController;
         topViewController = [[controller viewControllers] lastObject];
-
+        
+        if (topViewController.presentedViewController != nil){
+            if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
+                UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
+                topViewController = [[navigationController viewControllers] lastObject];
+            }
+            
+            topViewController = (UIViewController *)topViewController.presentedViewController;
+            
+        }
     } else if ([self->delegate.window.rootViewController isKindOfClass:[UIViewController class]]) {
-        //        NSLog(@"getViewComponents UIViewController class");
         topViewController = self->delegate.window.rootViewController;
-
+        
+        if (topViewController.presentedViewController != nil){
+            if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
+                UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
+                topViewController = [[navigationController viewControllers] lastObject];
+            }
+            
+            topViewController = (UIViewController *)topViewController.presentedViewController;
+            
+        }
     } else {
         NSLog(@"getViewComponents class");
         NSLog(@"%@", [NSString stringWithFormat:@"%@", [self->delegate.window.rootViewController class]]);
-
+        
         return [NSMutableArray new];
     }
     currentPageName = NSStringFromClass([topViewController class]);
@@ -327,11 +344,41 @@ static UXMenAPI *uxmenShared = nil;
 
             UITextField *parseText = (UITextField *) subview;
             elementData.text = parseText.text;
+            
+        } else if ([subview class] == [UIScrollView class]) {
+            // NSLog(@"VIEW'DE BULUNAN OBJE    : UITextField");
+            
+            elementData.type = @"UIScrollView";
+            elementData.text = @"";
+            
+            UIScrollView *parseScrollView = (UIScrollView *) subview;
+            elementData.contentOffsetY = parseScrollView.contentOffset.y;
+            
+            [self parseView:subview viewParent:elementData.viewIdentifier];
 
+        } else if ([subview class] == [UITableView class]) {
+            // NSLog(@"VIEW'DE BULUNAN OBJE    : UITextField");
+            
+            elementData.type = @"UITableView";
+            elementData.text = @"";
+            
+            UITableView *parseTableView = (UITableView *) subview;
+            elementData.contentOffsetY = parseTableView.contentOffset.y;
+            
+            [self parseView:subview viewParent:elementData.viewIdentifier];
+
+        } else if ([[subview class] isSubclassOfClass:[UITableViewCell class]]) {
+            // NSLog(@"VIEW'DE BULUNAN OBJE    : UITextField");
+            
+            elementData.type = @"UITableViewCell";
+            elementData.text = @"";
+            
         } else if ([subview class] == [UILayoutGuide class]) {
             // NSLog(@"VIEW'DE BULUNAN OBJE    : UILayoutGuide");
-
+            
             elementData.type = @"UILayoutGuide";
+            
+            [self parseView:subview viewParent:elementData.viewIdentifier];
 
         } else if ([subview class] == [UIView class]) {
             // NSLog(@"VIEW'DE BULUNAN OBJE    : UIView");
@@ -405,6 +452,8 @@ static UXMenAPI *uxmenShared = nil;
 
             dictElement[@"objWidth"] = @(screenData.objWidth);
             dictElement[@"objHeight"] = @(screenData.objHeight);
+            
+            dictElement[@"contentOffsetY"] = @(screenData.contentOffsetY);
 
             dictElement[@"parent"] = screenData.parent;
             dictElement[@"viewIdentifier"] = screenData.viewIdentifier;
@@ -455,9 +504,7 @@ static UXMenAPI *uxmenShared = nil;
                         [self->arrayWireframes removeObjectAtIndex:0];
 
                     }
-
                 }
-
             }
         }
 
@@ -566,43 +613,42 @@ static UXMenAPI *uxmenShared = nil;
     [request setHTTPMethod:@"POST"];
     [request setAllHTTPHeaderFields:headers];
     [request setHTTPBody:postData];
-
+    
     NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
-                                                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                    if (error) {
-                                                        NSLog(@"%@", error);
-
-                                                        NSLog(@"returnWithUXMenApiError");
-                                                        // [self.delegate returnWithUXMenApiError:API_WIREFRAME];
-
-                                                    } else {
-                                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                                                        NSLog(@"%@", httpResponse);
-
-                                                        // Parse the JSON response
-                                                        NSError *jsonError;
-                                                        NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
-                                                                                                                     options:nil
-                                                                                                                       error:&jsonError];
-                                                        if (jsonError) {
-                                                            // [NSException raise:@"Exception on parsing JSON data" format:@"%@", jsonError.localizedDescription];
-
-                                                            NSLog(@"returnWithUXMenApiError");
-                                                            //[self.delegate returnWithUXMenApiError:API_HANDSHAKE];
-
-                                                            return;
-                                                        }
-
-                                                        self->statusResponse = [UXMenResponseStatus new];
-                                                        self->statusResponse.status = [jsonResponse[@"status"] intValue];
-
-                                                        // [self.delegate returnWithUXMenWireframe:statusResponse.status];
-
-                                                    }
-                                                }];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+            
+            NSLog(@"returnWithUXMenApiError");
+            // [self.delegate returnWithUXMenApiError:API_WIREFRAME];
+            
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            NSLog(@"%@", httpResponse);
+            
+            // Parse the JSON response
+            NSError *jsonError;
+            NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:nil
+                                                                           error:&jsonError];
+            if (jsonError) {
+                // [NSException raise:@"Exception on parsing JSON data" format:@"%@", jsonError.localizedDescription];
+                
+                NSLog(@"returnWithUXMenApiError");
+                //[self.delegate returnWithUXMenApiError:API_HANDSHAKE];
+                
+                return;
+            }
+            
+            self->statusResponse = [UXMenResponseStatus new];
+            self->statusResponse.status = [jsonResponse[@"status"] intValue];
+            
+            // [self.delegate returnWithUXMenWireframe:statusResponse.status];
+            
+        }
+    }];
     [dataTask resume];
-
+    
 }
 
 @end
