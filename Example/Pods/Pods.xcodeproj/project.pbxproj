@@ -63,9 +63,9 @@
 
 /* Begin PBXFileReference section */
 		00865ADE909AABA81CFEFBD6FD7C3080 /* Pods-UXMen-iOS-SDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		07A6290A719C6E59AEE85ACDD06C9A37 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		07A6290A719C6E59AEE85ACDD06C9A37 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BA3331EABA69A6BBF30D2CD88447644 /* UXMen-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
-		13571547BDE49D0308B67AE7BA07255D /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Tests.framework; path = "Pods-UXMen-iOS-SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13571547BDE49D0308B67AE7BA07255D /* Pods_UXMen_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXMen_iOS_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B177AA27D7FFACE258AE87ADDA2184 /* UXMenGestureTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenGestureTrack.h; sourceTree = "<group>"; };
 		1E5B61399DBFC7DF1B16B7F8C4A9DB3A /* UXMenResponseStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenResponseStatus.h; sourceTree = "<group>"; };
 		2711B97208DE20DC1696F43963763317 /* UXMenRequestStory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenRequestStory.m; sourceTree = "<group>"; };
@@ -82,12 +82,12 @@
 		412D4C55324DBFA8141CD90885B48561 /* UXMenTouchUpdateModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenTouchUpdateModel.h; sourceTree = "<group>"; };
 		422932CA025E19FD84BB44071BD35953 /* Pods-UXMen-iOS-SDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		440CE45AC6C3D4D11B3A78651A47081A /* Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		44CAE354BF9D207C05DCE1DA285BF8CE /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UXMen_iOS_SDK.framework; path = "UXMen-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CAE354BF9D207C05DCE1DA285BF8CE /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UXMen_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA8E8E6892888255AA69A65C66A1708 /* UXMenRequestHandshake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestHandshake.h; sourceTree = "<group>"; };
 		51B7BD1944054CF55A7E85535ADE3687 /* Pods-UXMen-iOS-SDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		52A505F98C5BE8F939B3F0465BB5BF60 /* UXMenTouchUpdateModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenTouchUpdateModel.m; sourceTree = "<group>"; };
 		570255A321FEEA1824CAD42E7B35B6EF /* UXMenDeviceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenDeviceManager.m; sourceTree = "<group>"; };
-		5885280DEFA428204FBD893D0DA70B96 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UXMen_iOS_SDK_Example.framework; path = "Pods-UXMen-iOS-SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5885280DEFA428204FBD893D0DA70B96 /* Pods_UXMen_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXMen_iOS_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACDB09BF6551E81579547CAD4EC7D3D /* UXMenAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UXMenAPI.m; path = "UXMen-iOS-SDK/Classes/UXMenAPI.m"; sourceTree = "<group>"; };
 		5DB72CF799E524FA9761B8D7C10DD3A5 /* Pods-UXMen-iOS-SDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UXMen-iOS-SDK_Example-dummy.m"; sourceTree = "<group>"; };
 		65313C45551A26135A09123F43DF58A8 /* UXMenResponseHandshake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UXMenResponseHandshake.m; sourceTree = "<group>"; };
@@ -98,10 +98,10 @@
 		7A9E33E8CB28FC50FCC64D968271D594 /* Pods-UXMen-iOS-SDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-Info.plist"; sourceTree = "<group>"; };
 		7BE4ADBFE8A2573AF90EB920E236D023 /* Pods-UXMen-iOS-SDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UXMen-iOS-SDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		819E76989484A49786606F5E55C1EA06 /* Pods-UXMen-iOS-SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		880A50053A1512D8B3739394EEBCA3FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		880A50053A1512D8B3739394EEBCA3FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		91484423B405E53D924497C89662C702 /* UXMen-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UXMen-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		9424253DF147B4493DD57EDA2AC6F57C /* UXMenRequestElementData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenRequestElementData.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A222B19A448475FA5A59947C1FB201ED /* UXMenTrackGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UXMenTrackGesture.h; sourceTree = "<group>"; };
 		A9A4F60EFF67EA7E0C1DD47B7B4BE03D /* Pods-UXMen-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE7A61BD3CDFE1E7C055E99F9CB4D1C2 /* Pods-UXMen-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UXMen-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		D2B9FA4D6E3965AFB63E2C176DDF731A /* Pods-UXMen-iOS-SDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UXMen-iOS-SDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		D60A8F0E3AFC11B31A16E6AC341DEF74 /* UXMenAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UXMenAPI.h; path = "UXMen-iOS-SDK/Classes/UXMenAPI.h"; sourceTree = "<group>"; };
 		E8BB3B6F7B517EA7AC1A09572DA584F7 /* UXMen-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UXMen-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
-		FFC45D8E36C5CE4B6BDC0E3D5BE552C1 /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FFC45D8E36C5CE4B6BDC0E3D5BE552C1 /* UXMen-iOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "UXMen-iOS-SDK.podspec"; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,7 +284,6 @@
 				CE7C92DE9CBA0D1DDE3714D6394FF6FE /* UXMenResponseHandshake.h */,
 				65313C45551A26135A09123F43DF58A8 /* UXMenResponseHandshake.m */,
 			);
-			name = UXMenHandshake;
 			path = UXMenHandshake;
 			sourceTree = "<group>";
 		};
@@ -328,7 +327,6 @@
 				7489BDCB398E809EB57300F5C6F48BB8 /* UXMenRequestWireFrame.h */,
 				3FD3D6005036CB98E68173B47BDA2DB4 /* UXMenRequestWireFrame.m */,
 			);
-			name = UXMenStory;
 			path = UXMenStory;
 			sourceTree = "<group>";
 		};
@@ -724,8 +722,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
