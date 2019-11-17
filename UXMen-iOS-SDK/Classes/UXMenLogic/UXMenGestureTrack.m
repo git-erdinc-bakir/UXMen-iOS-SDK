@@ -105,10 +105,10 @@
             if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
                 UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
                 topViewController = [[navigationController viewControllers] lastObject];
+            } else {
+                topViewController = (UIViewController *)topViewController.presentedViewController;
+                
             }
-            
-            topViewController = (UIViewController *)topViewController.presentedViewController;
-            
         }
     } else if ([self.window.rootViewController isKindOfClass:[UIViewController class]]) {
         //        NSLog(@"getViewComponents UIViewController class");
@@ -118,10 +118,10 @@
             if ([topViewController.presentedViewController isKindOfClass:[UINavigationController class]]) {
                 UINavigationController *navigationController = (UINavigationController *)topViewController.presentedViewController;
                 topViewController = [[navigationController viewControllers] lastObject];
+            } else {
+                topViewController = (UIViewController *)topViewController.presentedViewController;
+                
             }
-            
-            topViewController = (UIViewController *)topViewController.presentedViewController;
-            
         }
     } else {
         NSLog(@"getViewComponents class");
