@@ -18,22 +18,19 @@ NSString *API_STORY = @"story";
 
 @implementation UXMenAPI {
     id <UIApplicationDelegate> delegate;
-
+    
+    bool isScreenChanged;
     NSString *currentPageName;
 
     NSString *apiSessionId;
     NSDictionary *headers;
-
+    
     UXMenResponseHandshake *handshakeResponse;
     UXMenResponseStatus *statusResponse;
-
+    
+    NSTimer *trackerTimer;
+    
     NSMutableArray *currentViewComponents;
-
-    NSMutableArray *arrayWireframes;
-    NSMutableArray *arrayPageElements;
-
-    NSMutableArray *listActions;
-    NSMutableArray *listWireframes;
 
 }
 
@@ -66,14 +63,10 @@ static UXMenAPI *uxmenShared = nil;
 - (void)configure {
     delegate = [UIApplication sharedApplication].delegate;
 
+    isScreenChanged = NO;
     apiSessionId = @"-1";
-
-    arrayWireframes = [NSMutableArray new];
-    arrayPageElements = [NSMutableArray new];
-
-    listActions = [NSMutableArray new];
-    listWireframes = [NSMutableArray new];
-
+    currentPageName = @"";
+    
     API_BASE_URL = @"http://134.209.93.110:3000";
     // API_BASE_URL = @"http://192.168.1.10:3000";
 
@@ -98,7 +91,7 @@ static UXMenAPI *uxmenShared = nil;
     requestDeviceData.ratio = [UIScreen mainScreen].scale;
 
     [self handshake:requestDeviceData];
-    
+
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleTouchUpdate:)
                                                  name:@"UXMenTouchNotification"
@@ -182,11 +175,10 @@ static UXMenAPI *uxmenShared = nil;
 
     NSMutableDictionary *dictWireframe = [NSMutableDictionary new];
     dictWireframe[@"timeStamp"] = @(timestamp);
+    
+    NSMutableArray *listWireframes = [NSMutableArray new];
 
-    arrayWireframes = [NSMutableArray new];
-    listWireframes = [NSMutableArray new];
-
-    arrayPageElements = [NSMutableArray new];
+    NSMutableArray *arrayPageElements = [NSMutableArray new];
 
     dispatch_async(dispatch_get_main_queue(), ^{
         NSMutableArray *arrayViewComponents = [self getViewComponents];
@@ -209,18 +201,35 @@ static UXMenAPI *uxmenShared = nil;
             dictElement[@"text"] = screenData.text;
             dictElement[@"btnAction"] = screenData.btnAction;
 
-            [self->arrayPageElements addObject:dictElement];
+            [arrayPageElements addObject:dictElement];
 
         }
 
-        dictWireframe[@"elements"] = self->arrayPageElements;
+        dictWireframe[@"elements"] = arrayPageElements;
 
-        [self->listWireframes addObject:dictWireframe];
-        [self->arrayWireframes addObject:dictWireframe];
+        [listWireframes addObject:dictWireframe];
 
-        [self sendNewStoryWithNewScreen:YES];
+        [self sendNewStoryWithNewScreen:YES withWireframes:listWireframes withActions:[NSMutableArray new]];
+        
+        self->trackerTimer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                        target:self
+                                                      selector:@selector(checkScreenChanges)
+                                                      userInfo:nil
+                                                       repeats:YES];
 
     });
+}
+
+- (void)checkScreenChanges {
+    //    NSLog(@"checkScreenChanges");
+    
+    if (isScreenChanged) {
+        isScreenChanged = NO;
+        
+        [self initScreen];
+        
+    }
+    
 }
 
 #pragma mark WIREFRAME OPERATIONS
@@ -262,8 +271,14 @@ static UXMenAPI *uxmenShared = nil;
         
         return [NSMutableArray new];
     }
-    currentPageName = NSStringFromClass([topViewController class]);
-
+    
+    NSString *screenName = NSStringFromClass([topViewController class]);
+    if ([currentPageName isEqualToString:@""] == NO
+        && [screenName isEqualToString:currentPageName] == NO) {
+        isScreenChanged = YES;
+    }
+    currentPageName = screenName;
+    
     UIView *currentView = topViewController.view;
 
 //    NSLog(@"CONTAINER VIEW X      : %f", currentView.frame.origin.x);
@@ -384,12 +399,12 @@ static UXMenAPI *uxmenShared = nil;
             // NSLog(@"VIEW'DE BULUNAN OBJE    : UIView");
 
             elementData.type = @"UIView";
-
+            
             [self parseView:subview viewParent:elementData.viewIdentifier];
-
+            
         } else {
             elementData.type = @"UnknownComponent";
-
+            
         }
 
 //        NSLog(@"COMPONENT X      : %f", subview.frame.origin.x);
@@ -417,13 +432,13 @@ static UXMenAPI *uxmenShared = nil;
     NSLog(@"appWillResignActive: %@", note);
 
     // SON KALANLARI DA GÖNDER
-    NSMutableArray *arrayTouches = [self getTouchLocations];
-    if ([arrayTouches isKindOfClass:[NSMutableArray class]]) {
-        if (arrayTouches.count > 0) {
-            [self sendNewStoryWithNewScreen:NO];
-
-        }
-    }
+//    NSMutableArray *arrayTouches = [self getTouchLocations];
+//    if ([arrayTouches isKindOfClass:[NSMutableArray class]]) {
+//        if (arrayTouches.count > 0) {
+//            [self sendNewStoryWithNewScreen:NO];
+//
+//        }
+//    }
 
 }
 
@@ -440,7 +455,7 @@ static UXMenAPI *uxmenShared = nil;
         NSMutableDictionary *dictWireframe = [NSMutableDictionary new];
         dictWireframe[@"timeStamp"] = @(timestamp);
 
-        self->arrayPageElements = [NSMutableArray new];
+        NSMutableArray *arrayPageElements = [NSMutableArray new];
 
         NSMutableArray *arrayViewComponents = [self getViewComponents];
         for (NSUInteger i = 0; i < arrayViewComponents.count; i++) {
@@ -462,54 +477,21 @@ static UXMenAPI *uxmenShared = nil;
             dictElement[@"text"] = screenData.text;
             dictElement[@"btnAction"] = screenData.btnAction;
 
-            [self->arrayPageElements addObject:dictElement];
+            [arrayPageElements addObject:dictElement];
 
         }
 
-        dictWireframe[@"elements"] = self->arrayPageElements;
-        [self->arrayWireframes addObject:dictWireframe];
+        dictWireframe[@"elements"] = arrayPageElements;
 
-        // CHECK IF SCREEN IS CHANGE
+        NSMutableArray *arrayWireframes = [NSMutableArray new];
+        [arrayWireframes addObject:dictWireframe];
 
-        BOOL isScreenChanged = NO;
         NSMutableArray *arrayTouches = [self getTouchLocations];
         if ([arrayTouches isKindOfClass:[NSMutableArray class]]) {
             if (arrayTouches.count > 0) {
-                UXMenTouchUpdateModel *modelFirstTouch = arrayTouches[0];
-                UXMenTouchUpdateModel *modelLastTouch = arrayTouches[arrayTouches.count - 1];
-
-                if ([modelFirstTouch.pageName isEqualToString:modelLastTouch.pageName] == NO) {
-                    isScreenChanged = YES;
-
-                    self->listActions = [NSMutableArray new];
-                    self->listWireframes = [NSMutableArray new];
-
-                    int indexCurrentPageTouches = 0;
-                    for (UXMenTouchUpdateModel *modelTouch in arrayTouches) {
-                        if ([modelTouch.pageName isEqualToString:modelLastTouch.pageName] == YES) {
-                            break;
-                        }
-
-                        [self->listActions addObject:modelTouch];
-
-                        NSMutableDictionary *dictNewWireframe = self->arrayWireframes[(NSUInteger) indexCurrentPageTouches];
-                        [self->listWireframes addObject:dictNewWireframe];
-
-                        indexCurrentPageTouches++;
-
-                    }
-
-                    for (int i = 0; i < indexCurrentPageTouches; i++) {
-                        [self removeFirstTouchRecord];
-                        [self->arrayWireframes removeObjectAtIndex:0];
-
-                    }
-                }
+                [self sendNewStoryWithNewScreen:NO withWireframes:arrayWireframes withActions:arrayTouches];
+                
             }
-        }
-
-        if (isScreenChanged == YES) {
-            [self sendNewStoryWithNewScreen:NO];
         }
     });
 }
@@ -531,7 +513,9 @@ static UXMenAPI *uxmenShared = nil;
 
 #pragma mark WEBSERVICE
 
-- (void)sendNewStoryWithNewScreen:(BOOL)isInitialScreen {
+- (void)sendNewStoryWithNewScreen:(BOOL)isInitialScreen
+                   withWireframes:(NSMutableArray *)listWireframes
+                   withActions:(NSMutableArray *)listActions{
 
     dispatch_async(dispatch_get_main_queue(), ^{
         UXMenRequestStory *requestStory = [UXMenRequestStory new];
@@ -545,10 +529,7 @@ static UXMenAPI *uxmenShared = nil;
         // GATHER WIREFRAME DATA
         ///////////////////////////
 
-        requestStory.wireframes = self->listWireframes;
-
-        self->listWireframes = [NSMutableArray new];
-        self->arrayWireframes = [NSMutableArray new];
+        requestStory.wireframes = listWireframes;
 
         ////////////////////////
         // GATHER ACTION DATA
@@ -557,8 +538,8 @@ static UXMenAPI *uxmenShared = nil;
         NSString *pageName = @"";
         NSMutableArray *dictActions = [NSMutableArray new];
 
-        if (self->listActions.count > 0) {
-            for (UXMenTouchUpdateModel *modelTouch in self->listActions) {
+        if (listActions.count > 0) {
+            for (UXMenTouchUpdateModel *modelTouch in listActions) {
                 pageName = modelTouch.pageName;
 
                 CGPoint point = [modelTouch.touchLocation CGPointValue];
@@ -573,6 +554,8 @@ static UXMenAPI *uxmenShared = nil;
 
             }
 
+            [self removeFirstTouchRecord];
+            
         }
 
         requestStory.actions = dictActions;
@@ -580,8 +563,6 @@ static UXMenAPI *uxmenShared = nil;
         if ([pageName isEqualToString:@""]) {
             requestStory.page = self->currentPageName;
         }
-
-        self->listActions = [NSMutableArray new];
 
         ///////////////////////////
         // SEND DATA TO SERVER
