@@ -10,6 +10,7 @@
 		176752D82381782600056A6D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752D72381782600056A6D /* ListViewController.m */; };
 		176752DB23817A1F00056A6D /* UXMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752DA23817A1F00056A6D /* UXMTableCell.m */; };
 		176752DE2381987700056A6D /* UXMScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176752DD2381987700056A6D /* UXMScrollViewController.m */; };
+		178E41A323EDF821007671E5 /* ErdincTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 178E41A223EDF821007671E5 /* ErdincTableView.m */; };
 		1798A80422DE734500446DB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1798A80222DE734500446DB7 /* SecondViewController.m */; };
 		17A5108022D21C2F00A182FB /* UXMen_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */; };
 		56593FC003F7E2C63D08C0AF /* Pods_UXMen_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74435CFA36B9195DD162610F /* Pods_UXMen_iOS_SDK_Tests.framework */; };
@@ -49,6 +50,8 @@
 		176752DA23817A1F00056A6D /* UXMTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMTableCell.m; sourceTree = "<group>"; };
 		176752DC2381987700056A6D /* UXMScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXMScrollViewController.h; sourceTree = "<group>"; };
 		176752DD2381987700056A6D /* UXMScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXMScrollViewController.m; sourceTree = "<group>"; };
+		178E41A123EDF821007671E5 /* ErdincTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErdincTableView.h; sourceTree = "<group>"; };
+		178E41A223EDF821007671E5 /* ErdincTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErdincTableView.m; sourceTree = "<group>"; };
 		1798A80222DE734500446DB7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1798A80322DE734500446DB7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		17A5107F22D21C2F00A182FB /* UXMen_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UXMen_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,8 @@
 				176752DA23817A1F00056A6D /* UXMTableCell.m */,
 				176752DC2381987700056A6D /* UXMScrollViewController.h */,
 				176752DD2381987700056A6D /* UXMScrollViewController.m */,
+				178E41A123EDF821007671E5 /* ErdincTableView.h */,
+				178E41A223EDF821007671E5 /* ErdincTableView.m */,
 			);
 			name = "Example for UXMen-iOS-SDK";
 			path = "UXMen-iOS-SDK";
@@ -392,6 +397,7 @@
 				1798A80422DE734500446DB7 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				176752DE2381987700056A6D /* UXMScrollViewController.m in Sources */,
+				178E41A323EDF821007671E5 /* ErdincTableView.m in Sources */,
 				6003F5A7195388D20070C39A /* UXMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				176752DB23817A1F00056A6D /* UXMTableCell.m in Sources */,

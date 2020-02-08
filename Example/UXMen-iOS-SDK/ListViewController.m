@@ -8,10 +8,11 @@
 
 #import "ListViewController.h"
 #import "UXMTableCell.h"
+#import "ErdincTableView.h"
 
 @interface ListViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *tblListing;
+@property (weak, nonatomic) IBOutlet ErdincTableView *tblListing;
 
 @end
 
@@ -54,12 +55,11 @@
     return 75;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell *)tableView:(ErdincTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UXMTableCell *cell = [_tblListing dequeueReusableCellWithIdentifier:@"UXMTableCell"];
     cell.lblTitle.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row ];
     
     return cell;
 }
-
 
 @end
