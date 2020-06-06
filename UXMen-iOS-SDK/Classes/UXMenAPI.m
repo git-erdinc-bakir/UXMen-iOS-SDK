@@ -299,16 +299,16 @@ static UXMenAPI *uxmenShared = nil;
                 return;
             }
             
-            self->handshakeResponse = [UXMenResponseHandshake new];
-            self->handshakeResponse.status = [jsonResponse[@"status"] intValue];
-            self->handshakeResponse.result = [jsonResponse[@"result"] stringValue];
-            
-            self->apiSessionId = self->handshakeResponse.result;
-            
-            [self initScreen];
-            
-            // [self.delegate returnWithUXMenHandshake:handshakeResponse];
-            
+            int status = [jsonResponse[@"status"] intValue];
+            if (status == 200) {
+                self->apiSessionId = jsonResponse[@"result"];
+                
+                [self initScreen];
+                
+            } else if (status == 403){
+                self->isTrackingActive = NO;
+                
+            }            
         }
     }];
     [dataTask resume];
