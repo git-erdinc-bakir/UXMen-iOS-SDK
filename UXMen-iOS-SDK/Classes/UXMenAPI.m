@@ -5,7 +5,6 @@
 
 
 #import "UXMenAPI.h"
-#import "UXMenResponseHandshake.h"
 #import "UXMenRequestHandshake.h"
 #import "UXMenDeviceManager.h"
 #import "UXMenRequestElementData.h"
@@ -13,20 +12,23 @@
 
 NSString *API_BASE_URL;
 
+NSString *API_LOGIN = @"login";
 NSString *API_HANDSHAKE = @"handshake";
 NSString *API_STORY = @"story";
 
 @implementation UXMenAPI {
     id <UIApplicationDelegate> delegate;
     
+    bool isTrackingActive;
+    
+    NSString *appId;
+    NSString *secret;
+    
     bool isScreenChanged;
     NSString *currentPageName;
     
     NSString *apiSessionId;
     NSDictionary *headers;
-    
-    UXMenResponseHandshake *handshakeResponse;
-    UXMenResponseStatus *statusResponse;
     
     NSTimer *trackerTimer;
     
@@ -57,22 +59,184 @@ static UXMenAPI *uxmenShared = nil;
     
     // [window setUxmenTouchDelegate:self];
     [window startTracking];
-    
+        
 }
 
-- (void)configure {
+- (void)configure:(NSString *)uxmenAppId andSecretKey:(NSString *)uxmenSecretKey {
     delegate = [UIApplication sharedApplication].delegate;
+    
+    isTrackingActive = YES;
     
     isScreenChanged = NO;
     apiSessionId = @"-1";
     currentPageName = @"";
     
+    appId = uxmenAppId;
+    secret = uxmenSecretKey;
+    
     API_BASE_URL = @"http://134.209.93.110:3000";
-    // API_BASE_URL = @"http://192.168.1.10:3000";
     
     headers = @{@"Content-Type": @"application/json",
                 @"cache-control": @"no-cache"};
     
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(handleDidEnterBackground:)
+                                                 name: UIApplicationDidEnterBackgroundNotification
+                                               object: nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(handleWillEnterForeground:)
+                                                 name: UIApplicationWillEnterForegroundNotification
+                                               object: nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleTouchUpdate:)
+                                                 name:@"UXMenTouchNotification"
+                                               object:nil];
+    
+    // START TOKENIZATION
+    [self tokenization];
+    
+}
+
+- (void)handleDidEnterBackground:(NSNotification *)note {
+    NSLog(@"handleDidEnterBackground: %@", note);
+
+    [self sendAppStatusNotification:@"handleDidEnterBackground"];
+    
+}
+
+- (void)handleWillEnterForeground:(NSNotification *)note {
+    NSLog(@"handleWillEnterForeground: %@", note);
+    
+    [self sendAppStatusNotification:@"handleWillEnterForeground"];
+    
+}
+
+- (void)sendAppStatusNotification:(NSString *)appStatus {
+    
+    if (isTrackingActive == NO) {
+        return;
+    }
+    
+    if ([apiSessionId isEqualToString:@"-1"]) {
+        return;
+    }
+    
+    ////////////////////////
+    // GATHER STORY DATA
+    ////////////////////////
+
+    NSDate *currentDate = [NSDate date];
+    double timestamp = [currentDate timeIntervalSince1970];
+    
+    NSDictionary *parameters = @{@"session_id": apiSessionId,
+                                 @"appStatusNotification": appStatus,
+                                 @"timeStamp": @(timestamp)};
+    
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@", API_BASE_URL, API_STORY];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:10.0];
+    [request setHTTPMethod:@"POST"];
+    [request setAllHTTPHeaderFields:headers];
+    [request setHTTPBody:postData];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+            
+            NSLog(@"returnWithUXMenApiError");
+            // [self.delegate returnWithUXMenApiError:API_WIREFRAME];
+            
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            NSLog(@"%@", httpResponse);
+            
+            // Parse the JSON response
+            NSError *jsonError;
+            NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:nil
+                                                                           error:&jsonError];
+            if (jsonError) {
+                NSLog(@"returnWithUXMenApiError");
+                return;
+            } else {
+                int status = [jsonResponse[@"status"] intValue];
+                if (status == 200) {
+                    NSLog(@"%@", jsonResponse[@"result"]);
+                    
+                }
+            }
+        }
+    }];
+    [dataTask resume];
+    
+}
+
+#pragma mark TOKENIZATION OPERATION
+
+- (void)tokenization {
+    
+    NSDictionary *parameters = @{@"appId": appId,
+                                 @"secret": secret};
+    
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@", API_BASE_URL, API_LOGIN];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:10.0];
+    [request setHTTPMethod:@"POST"];
+    [request setAllHTTPHeaderFields:headers];
+    [request setHTTPBody:postData];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+            
+            NSLog(@"returnWithUXMenApiError");
+            // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
+            
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            NSLog(@"%@", httpResponse);
+            
+            // Parse the JSON response
+            NSError *jsonError;
+            NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:nil
+                                                                           error:&jsonError];
+            if (jsonError) {
+                //[NSException raise:@"Exception on parsing JSON data"
+                //             format:@"%@", jsonError.localizedDescription];
+                
+                NSLog(@"returnWithUXMenApiError");
+                // [self.delegate returnWithUXMenApiError:API_HANDSHAKE];
+                return;
+            }
+            
+            int status = [jsonResponse[@"status"] intValue];
+            if (status == 200) {
+                NSString *uxmenToken = jsonResponse[@"result"];
+                
+                [self handShakeWithToken:uxmenToken];
+                   
+            }
+        }
+    }];
+    [dataTask resume];
+    
+}
+
+#pragma mark HANDSHAKE OPERATION
+
+- (void)handShakeWithToken:(NSString *)token {
+
     UXMenRequestHandshake *requestDeviceData = [UXMenRequestHandshake new];
     
     NSString *uuid = [[NSUUID UUID] UUIDString];
@@ -90,31 +254,14 @@ static UXMenAPI *uxmenShared = nil;
     
     requestDeviceData.ratio = [UIScreen mainScreen].scale;
     
-    [self handshake:requestDeviceData];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleTouchUpdate:)
-                                                 name:@"UXMenTouchNotification"
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(appWillResignActive:)
-                                                 name:UIApplicationWillResignActiveNotification
-                                               object:nil];
-    
-}
-
-#pragma mark HANDSHAKE OPERATIONS
-
-- (void)handshake:(UXMenRequestHandshake *)requestDeviceData {
-    
     NSDictionary *parameters = @{@"uid": requestDeviceData.uid,
                                  @"device_name": requestDeviceData.device_name,
                                  @"ratio": @(requestDeviceData.ratio),
                                  @"resolutionH": @(requestDeviceData.resolutionH),
                                  @"resolutionW": @(requestDeviceData.resolutionW),
                                  @"frameW": @(requestDeviceData.frameW),
-                                 @"frameH": @(requestDeviceData.frameH)};
+                                 @"frameH": @(requestDeviceData.frameH),
+                                 @"token": token};
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     
@@ -382,11 +529,6 @@ static UXMenAPI *uxmenShared = nil;
             
             [self parseView:subview viewParent:elementData.viewIdentifier];
             
-        } else if ([subview class] == [UILayoutGuide class]) {
-            elementData.type = @"LayoutGuide";
-            
-            [self parseView:subview viewParent:elementData.viewIdentifier];
-            
         } else if ([subview class] == [UIView class]) {
             elementData.type = @"View";
             
@@ -417,20 +559,6 @@ static UXMenAPI *uxmenShared = nil;
 }
 
 #pragma mark TOUCH OPERATIONS
-
-- (void)appWillResignActive:(NSNotification *)note {
-    NSLog(@"appWillResignActive: %@", note);
-    
-    // SON KALANLARI DA GÖNDER
-    //    NSMutableArray *arrayTouches = [self getTouchLocations];
-    //    if ([arrayTouches isKindOfClass:[NSMutableArray class]]) {
-    //        if (arrayTouches.count > 0) {
-    //            [self sendNewStoryWithNewScreen:NO];
-    //
-    //        }
-    //    }
-    
-}
 
 // Prints a message whenever a MyNotification is received
 - (void)handleTouchUpdate:(NSNotification *)note {
@@ -506,6 +634,10 @@ static UXMenAPI *uxmenShared = nil;
 - (void)sendNewStoryWithNewScreen:(BOOL)isInitialScreen
                    withWireframes:(NSMutableArray *)listWireframes
                       withActions:(NSMutableArray *)listActions{
+    
+    if (isTrackingActive == NO) {
+        return;
+    }
     
     dispatch_async(dispatch_get_main_queue(), ^{
         UXMenRequestStory *requestStory = [UXMenRequestStory new];
@@ -603,19 +735,15 @@ static UXMenAPI *uxmenShared = nil;
                                                                          options:nil
                                                                            error:&jsonError];
             if (jsonError) {
-                // [NSException raise:@"Exception on parsing JSON data" format:@"%@", jsonError.localizedDescription];
-                
                 NSLog(@"returnWithUXMenApiError");
-                //[self.delegate returnWithUXMenApiError:API_HANDSHAKE];
-                
                 return;
-            }
-            
-            self->statusResponse = [UXMenResponseStatus new];
-            self->statusResponse.status = [jsonResponse[@"status"] intValue];
-            
-            // [self.delegate returnWithUXMenWireframe:statusResponse.status];
-            
+            } else {
+                int status = [jsonResponse[@"status"] intValue];
+                if (status == 200) {
+                    NSLog(@"%@", jsonResponse[@"result"]);
+                    
+                }
+            }            
         }
     }];
     [dataTask resume];

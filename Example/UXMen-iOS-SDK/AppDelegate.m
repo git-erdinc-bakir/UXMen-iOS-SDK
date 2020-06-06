@@ -15,8 +15,11 @@
 {
     // Override point for customization after application launch.
 
+    NSString *appId = @"317d2f3db37008eb936687bfe565759d29788adf045be1a9f64ccece44cd4edd";
+    NSString *secret = @"ee977d551f7ee4fb5e56c2393338b2ab31f04e1be6dc46507d2cfa4469870b7a";
+    
     [UXMenAPI.shared startTracking:self.window];
-    [UXMenAPI.shared configure];
+    [UXMenAPI.shared configure:appId andSecretKey:secret];
 
     return YES;
 }

@@ -22,7 +22,6 @@
 #import "UXMenGestureTrack.h"
 #import "UXMenTouchUpdateModel.h"
 #import "UXMenTrackGesture.h"
-#import "UXMenSDK.h"
 
 FOUNDATION_EXPORT double UXMen_iOS_SDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char UXMen_iOS_SDKVersionString[];

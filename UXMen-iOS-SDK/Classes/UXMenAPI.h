@@ -31,14 +31,14 @@
 
 - (void)startTracking:(UIWindow *)window;
 
-- (void)configure;
+- (void)configure:(NSString *)uxmenAppId andSecretKey:(NSString *)uxmenSecretKey;
+
+- (void)handShakeWithToken:(NSString *)token;
+
+- (void)sendStory:(UXMenRequestStory *)requestStory;
 
 - (NSMutableArray *)getViewComponents;
 
 - (NSMutableArray *)getTouchLocations;
-
-- (void)handshake:(UXMenRequestHandshake *)requestHandshake;
-
-- (void)sendStory:(UXMenRequestStory *)requestStory;
 
 @end
