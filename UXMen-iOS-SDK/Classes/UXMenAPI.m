@@ -260,8 +260,7 @@ static UXMenAPI *uxmenShared = nil;
                                  @"resolutionH": @(requestDeviceData.resolutionH),
                                  @"resolutionW": @(requestDeviceData.resolutionW),
                                  @"frameW": @(requestDeviceData.frameW),
-                                 @"frameH": @(requestDeviceData.frameH),
-                                 @"token": token};
+                                 @"frameH": @(requestDeviceData.frameH)};
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     
@@ -273,7 +272,11 @@ static UXMenAPI *uxmenShared = nil;
     [request setAllHTTPHeaderFields:headers];
     [request setHTTPBody:postData];
     
-    NSURLSession *session = [NSURLSession sharedSession];
+    //Configure your session with common header fields like authorization etc
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    sessionConfiguration.HTTPAdditionalHeaders = @{@"Authorization": token};
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             NSLog(@"%@", error);
@@ -333,6 +336,8 @@ static UXMenAPI *uxmenShared = nil;
             UXMenRequestElementData *screenData = arrayViewComponents[i];
             
             NSMutableDictionary *dictElement = [NSMutableDictionary new];
+            dictElement[@"zIndex"] = @(screenData.zIndex);
+            
             dictElement[@"posX"] = @(screenData.posX);
             dictElement[@"posY"] = @(screenData.posY);
             
@@ -347,6 +352,8 @@ static UXMenAPI *uxmenShared = nil;
             dictElement[@"type"] = screenData.type;
             dictElement[@"text"] = screenData.text;
             dictElement[@"btnAction"] = screenData.btnAction;
+            
+            dictElement[@"backgroundColor"] = screenData.backgroundColor;
             
             [arrayPageElements addObject:dictElement];
             
@@ -452,16 +459,22 @@ static UXMenAPI *uxmenShared = nil;
 
 - (void)parseView:(UIView *)view viewParent:(NSString *)parent {
     
+    int zIndex = 0;
     for (UIView *subview in view.subviews) {
+        zIndex++;
         UXMenRequestElementData *elementData = [UXMenRequestElementData new];
         elementData.parent = parent;
         
         NSString *viewIdentifier = [UXMenAPI generateRandomString:20];
         elementData.viewIdentifier = viewIdentifier;
         
+        elementData.zIndex = zIndex;
+        
         elementData.text = @"";
         elementData.btnAction = @"";
         
+        elementData.backgroundColor = [self colorToString:subview.backgroundColor];
+                
         if ([subview class] == [UIButton class]
             || [[subview class] isSubclassOfClass:[UIButton class]]) {
             // NSLog(@"VIEW'DE BULUNAN OBJE    : UIButton");
@@ -558,6 +571,12 @@ static UXMenAPI *uxmenShared = nil;
     
 }
 
+- (NSString *) colorToString:(UIColor *) color {
+    CGFloat red, green, blue, alpha;
+    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+    return [NSString stringWithFormat:@"%02x%02x%02x", (int)(red * 255), (int)(green * 255) , (int)(blue * 255)];
+}
+
 #pragma mark TOUCH OPERATIONS
 
 // Prints a message whenever a MyNotification is received
@@ -580,6 +599,8 @@ static UXMenAPI *uxmenShared = nil;
             UXMenRequestElementData *screenData = arrayViewComponents[i];
             
             NSMutableDictionary *dictElement = [NSMutableDictionary new];
+            dictElement[@"zIndex"] = @(screenData.zIndex);
+            
             dictElement[@"posX"] = @(screenData.posX);
             dictElement[@"posY"] = @(screenData.posY);
             
@@ -594,6 +615,8 @@ static UXMenAPI *uxmenShared = nil;
             dictElement[@"type"] = screenData.type;
             dictElement[@"text"] = screenData.text;
             dictElement[@"btnAction"] = screenData.btnAction;
+            
+            dictElement[@"backgroundColor"] = screenData.backgroundColor;
             
             [arrayPageElements addObject:dictElement];
             

@@ -8,6 +8,8 @@
 
 @interface UXMenRequestElementData : NSObject
 
+@property(nonatomic) int zIndex;
+
 @property(nonatomic) double posX;
 @property(nonatomic) double posY;
 
@@ -23,5 +25,7 @@
 @property(nonatomic, copy) NSString *type;
 @property(nonatomic, copy) NSString *text;
 @property(nonatomic, copy) NSString *btnAction;
+
+@property(nonatomic, copy) NSString *backgroundColor;
 
 @end

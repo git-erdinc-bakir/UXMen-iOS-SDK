@@ -2,9 +2,9 @@ cd /Users/e_bakir/Desktop/MySpace/Workspace/UXMen/uxmen-ios-pod
 
 pod lib lint --allow-warnings
 
-git commit -m "0.1.15"
+git commit -m "0.1.16"
  
-git tag "0.1.15"
+git tag "0.1.16"
 
 git push --tags
 
@@ -12,7 +12,7 @@ pod trunk push UXMen-iOS-SDK.podspec --allow-warnings
 
 🎉  Congrats
 
-🚀  UXMen-iOS-SDK (0.1.15) successfully published
+🚀  UXMen-iOS-SDK (0.1.16) successfully published
 📅  May 25th, 16:29
 🌎  https://cocoapods.org/pods/UXMen-iOS-SDK
 👍  Tell your friends!
